@@ -21,7 +21,6 @@ group :development, :test do
    gem 'rspec-rails'
    gem 'capybara'
    gem 'pry'
-   gem 'faraday'
    gem 'simplecov'
    gem 'shoulda-matchers'
 end
