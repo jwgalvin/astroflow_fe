@@ -14,6 +14,9 @@ gem 'turbolinks', '~> 5'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.3.1'
+gem 'omniauth-google-oauth2'
+gem 'figaro'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
