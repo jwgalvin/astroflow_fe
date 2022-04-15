@@ -7,10 +7,26 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
   </head>
 
   <body>
-    
+  <% if !current_user%>
+  <a id="nav-link" href="/auth/google_oauth2"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+
+  <% elsif current_user%>
+    <a id="nav-item" href="/dashboard">Dashboard</a>
+    <a id="logout" href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+    <% end %>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
     <%= yield %>
   </body>
 </html>
