@@ -13,12 +13,16 @@ gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
+
 gem 'omniauth-google-oauth2'
 gem 'figaro'
+gem 'bootstrap', '~> 4.3.1'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-
+  gem 'webmock'
+  gem 'vcr'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
    gem 'rspec-rails'
    gem 'capybara'
