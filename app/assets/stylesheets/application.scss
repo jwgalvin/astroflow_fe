@@ -25,6 +25,7 @@ body {
 h1 {
   color: white;
   font-style: italic;
+  font-size: 60px;
 }
 h3 {
   color: white;
@@ -40,8 +41,9 @@ p {
 .text_color{
   color: white;
 }
-.background{
-  background-color: white;
+.background2{
+  background-image: url(tania-medina.jpg);
+  background-size: cover;
   display: flex;
 }
 
