@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 
     root "welcome#index"
+    get '/auth/google_oauth2/callback', to: 'users#create'
       # resources :login, only: [:show]
       # resources :register, only: [:new, :create], controller: :users
       # resources :dashboard, only: [:show], controller: :users
