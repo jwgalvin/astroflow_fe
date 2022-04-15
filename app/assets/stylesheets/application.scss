@@ -16,14 +16,35 @@
 @import "bootstrap";
 
 body {
-  background-color: lightgrey;
-  text-align: center;
-}
 
+  background-image: url(templatemo_main_top_bg.jpg);
+  background-size: cover;
+  text-align: center;
+  font-family: serif;
+}
+h1 {
+  color: white;
+  font-style: italic;
+}
+h3 {
+  color: white;
+  font-style: italic;
+}
+h4 {
+  color: white;
+  font-style: italic;
+}
+p {
+  font-style: italic;
+}
+.text_color{
+  color: white;
+}
 .background{
-  background-color: lightgrey;
+  background-color: white;
   display: flex;
 }
+
 .flex12{
   text-align: center;
 }
