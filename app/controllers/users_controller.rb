@@ -1,35 +1,40 @@
 class UsersController < ApplicationController
 
-  def new
-  end
-
   def create
     auth_hash = request.env['omniauth.auth']
     email = auth_hash['info']['email']
-    user = User.find_by(email: email)
-    session[:access_token] = auth_hash['credentials']['token']
-    redirect_to "/dashboard"
+    user = User.find_or_create_by(email: email)
+    session[:access_token] = auth_hash['info']['email']
+    #binding.pry
+
+    if !user.dob || !user.name
+      redirect_to "/register"
+    else
+      redirect_to "/dashboard"
+    end
   end
 
   def index
+    #binding.pry
+    user = User.find_by(email: session[:access_token])
+
+    if !user.dob
+      redirect_to "/register"
+    else
+      redirect_to "/dashboard"
+    end
   end
-  
+
   def show
     binding.pry
   end
 
-  def login_user
-    user = User.find_by(email: params[:email])
-    if user.authenticate(params[:password])
-      session[:user_id] = user.id
-      redirect_to "/users/dashboard?=#{user.email}"
-    elsif user.authenticate(params[:password]) == false
-      flash[:error]= "You ain't nobody"
-      render :login_form
-    elsif !user
-      flash[error] = "You ain't them! Try again"
-      render :login_form
-    end
+  def new
+    user = User.find_by(email: session[:access_token])
+  end
+
+  def edit
+    binding.pry
   end
 
   def logout
@@ -38,9 +43,8 @@ class UsersController < ApplicationController
   end
 
   private
-    def user_params
-      #params.permit(:name, :email)
-    end
-
+  def user_params
+    params.permit(:name, :email, :dob)
+  end
 
 end

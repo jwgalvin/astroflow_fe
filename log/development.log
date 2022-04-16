@@ -5532,3 +5532,2405 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2022-04-16 14:37:15 -0600
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.7) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.7) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.7) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.7) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.7) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.7) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.7) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/builder.rb:44:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.7) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.7) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-16 14:37:18 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 14:37:20 -0600
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.7) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.7) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.7) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.7) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.7) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.7) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.7) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/builder.rb:44:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.7) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.7) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-16 14:37:27 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 14:38:00 -0600
+Started GET "/auth/google_oauth2/callback?state=7615265ce6343343e4e71bb0662fbe2ab175cb5b71328cc3&code=4%2F0AX4XfWjcd3z1_B5n1S8_w_4FiDzYiSTjZUIRxXh78cCRVS8jqQOarOk-8xbdfl3115pafw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none" for ::1 at 2022-04-16 14:38:00 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"7615265ce6343343e4e71bb0662fbe2ab175cb5b71328cc3", "code"=>"4/0AX4XfWjcd3z1_B5n1S8_w_4FiDzYiSTjZUIRxXh78cCRVS8jqQOarOk-8xbdfl3115pafw", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email", "authuser"=>"0", "prompt"=>"none"}
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 14:38:02 -0600
+Started GET "/auth/google_oauth2/callback?state=32b4098af823b55d1f2af8478218b931b976e29fe90a7455&code=4%2F0AX4XfWieEMmKwX_hZJD4geRfn0PrliqyVgUDc2eiV0TBZ4VWRpokMpdMqm4ErCXNL7PO9w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for ::1 at 2022-04-16 14:38:03 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"32b4098af823b55d1f2af8478218b931b976e29fe90a7455", "code"=>"4/0AX4XfWieEMmKwX_hZJD4geRfn0PrliqyVgUDc2eiV0TBZ4VWRpokMpdMqm4ErCXNL7PO9w", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+Completed 500 Internal Server Error in 157898ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:9:in `create'
+Started GET "/" for ::1 at 2022-04-16 14:41:45 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 14:45:28 -0600
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 464624ms (ActiveRecord: 18.3ms)
+
+
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.7) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.7) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.7) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.7) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.7) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.7) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.7) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/builder.rb:44:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.7) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.7) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-16 14:48:59 -0600
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/joegalvin/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 71ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 14:49:03 -0600
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.7) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.7) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.7) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.7) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.7) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.7) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.7) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/builder.rb:44:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.7) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.7) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-16 14:49:29 -0600
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/joegalvin/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2022-04-16 14:49:33 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-16 14:49:37 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 14:49:38 -0600
+Started GET "/auth/google_oauth2/callback?state=7a5e243e9b8e0b8b20c8aa90af7df2347a8f37b215129e8d&code=4%2F0AX4XfWjsEKNg_LdedfM3ZuCCg1TcllxX1mGmMvxs3Y20NEEI7sag-bqg_57EPrBxXxr0Ow&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for ::1 at 2022-04-16 14:49:38 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"7a5e243e9b8e0b8b20c8aa90af7df2347a8f37b215129e8d", "code"=>"4/0AX4XfWjsEKNg_LdedfM3ZuCCg1TcllxX1mGmMvxs3Y20NEEI7sag-bqg_57EPrBxXxr0Ow", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+Completed 500 Internal Server Error in 104022ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:9:in `create'
+Started GET "/auth/google_oauth2/callback?state=7a5e243e9b8e0b8b20c8aa90af7df2347a8f37b215129e8d&code=4%2F0AX4XfWjsEKNg_LdedfM3ZuCCg1TcllxX1mGmMvxs3Y20NEEI7sag-bqg_57EPrBxXxr0Ow&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for ::1 at 2022-04-16 14:51:44 -0600
+  
+OAuth2::Error (invalid_grant: Bad Request
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}):
+  
+oauth2 (1.4.9) lib/oauth2/client.rb:139:in `request'
+oauth2 (1.4.9) lib/oauth2/client.rb:177:in `get_token'
+oauth2 (1.4.9) lib/oauth2/strategy/auth_code.rb:32:in `get_token'
+omniauth-google-oauth2 (1.0.1) lib/omniauth/strategies/google_oauth2.rb:142:in `client_get_token'
+omniauth-google-oauth2 (1.0.1) lib/omniauth/strategies/google_oauth2.rb:120:in `get_access_token'
+omniauth-google-oauth2 (1.0.1) lib/omniauth/strategies/google_oauth2.rb:99:in `custom_build_access_token'
+omniauth-oauth2 (1.7.2) lib/omniauth/strategies/oauth2.rb:91:in `callback_phase'
+omniauth (2.1.0) lib/omniauth/strategy.rb:272:in `callback_call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:194:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/builder.rb:44:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.7) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.7) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2022-04-16 14:51:51 -0600
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.7) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.7) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.7) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.7) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.7) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.7) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.7) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/builder.rb:44:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.7) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.7) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2022-04-16 14:53:24 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 14:55:03 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 14:55:06 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 14:55:09 -0600
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 14:59:33 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 14:59:37 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:55:in `get_user'
+app/controllers/users_controller.rb:17:in `index'
+Started GET "/dashboard" for ::1 at 2022-04-16 14:59:52 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 36232ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:55:in `get_user'
+app/controllers/users_controller.rb:17:in `index'
+Started GET "/dashboard" for ::1 at 2022-04-16 15:00:31 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 27218ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:56:in `get_user'
+app/controllers/users_controller.rb:18:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:01:09 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:01:12 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:58:in `get_user'
+app/controllers/users_controller.rb:19:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:01:24 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:01:25 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:01:28 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `get_user' for #<UsersController:0x00007fe85e1d3028>):
+  
+app/controllers/users_controller.rb:19:in `index'
+Started GET "/dashboard" for ::1 at 2022-04-16 15:01:45 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `get_user' for #<UsersController:0x00007fe85d04f568>):
+  
+app/controllers/users_controller.rb:19:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:01:55 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:02:00 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:20:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:02:36 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:02:39 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:21:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:02:41 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:02:44 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 15:02:47 -0600
+Started GET "/auth/google_oauth2/callback?state=2309580a4adf572fefd416dd6514e3af9ca1a843c57bc452&code=4%2F0AX4XfWgc8UHkd5zDn2fv6Ql2JnRmfbcgxitxUcJGzGxn-OphM6Z8Sr6F5lPBJHTW5Gz1_g&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for ::1 at 2022-04-16 15:02:47 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"2309580a4adf572fefd416dd6514e3af9ca1a843c57bc452", "code"=>"4/0AX4XfWgc8UHkd5zDn2fv6Ql2JnRmfbcgxitxUcJGzGxn-OphM6Z8Sr6F5lPBJHTW5Gz1_g", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Create (4.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "jwgalvin@gmail.com"], ["created_at", "2022-04-16 21:02:48.413572"], ["updated_at", "2022-04-16 21:02:48.413572"]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9
+Completed 500 Internal Server Error in 72952ms (ActiveRecord: 33.1ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/dashboard" for ::1 at 2022-04-16 15:04:30 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:21:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:04:32 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:05:27 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `dob' for nil:NilClass):
+  
+app/controllers/users_controller.rb:21:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:05:36 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:05:42 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:05:45 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 14870ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:20:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:06:02 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:06:04 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:06:06 -0600
+Processing by UsersController#index as HTML
+Started GET "/dashboard" for ::1 at 2022-04-16 15:07:06 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 46440ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:20:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:08:22 -0600
+Completed 500 Internal Server Error in 143784ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `dob' for nil:NilClass):
+  
+app/controllers/users_controller.rb:21:in `index'
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:08:38 -0600
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/joegalvin/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 39206ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:20:in `index'
+Started GET "/dashboard" for ::1 at 2022-04-16 15:09:28 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 95342ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:20:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:11:08 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2022-04-16 15:12:31 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-16 15:14:20 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:14:21 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:14:22 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `email' for #<UsersController:0x00007fe63b4aba40>):
+  
+app/controllers/users_controller.rb:21:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:14:29 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2022-04-16 15:14:31 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-16 15:15:05 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:15:06 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:15:09 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `email' for #<UsersController:0x00007fe64b181030>):
+  
+app/controllers/users_controller.rb:21:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:16:01 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:16:02 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:16:04 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:21:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:16:17 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:16:18 -0600
+Processing by UsersController#index as HTML
+Started GET "/dashboard" for ::1 at 2022-04-16 15:17:18 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 23764ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:20:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:18:13 -0600
+Completed 500 Internal Server Error in 120561ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:20:in `index'
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:18:22 -0600
+Processing by UsersController#index as HTML
+Started GET "/dashboard" for ::1 at 2022-04-16 15:19:22 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 20669ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:20:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:19:48 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2022-04-16 15:19:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-16 15:30:24 -0600
+Completed 500 Internal Server Error in 728880ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:20:in `index'
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:31:02 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:31:18 -0600
+  
+SyntaxError (/Users/joegalvin/turing/3module/projects/astroflow_fe/app/controllers/users_controller.rb:23: syntax error, unexpected ')'
+...er = UserFacade.find_by(email:)
+...                              ^
+):
+  
+app/controllers/users_controller.rb:23: syntax error, unexpected ')'
+Started GET "/" for ::1 at 2022-04-16 15:31:43 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:31:44 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 15:31:46 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `email' for #<UsersController:0x00007fe65ac59868>):
+  
+app/controllers/users_controller.rb:23:in `index'
+Started GET "/dashboard" for ::1 at 2022-04-16 15:31:46 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `email' for #<UsersController:0x00007fe63b66b6c8>):
+  
+app/controllers/users_controller.rb:23:in `index'
+Started GET "/dashboard" for ::1 at 2022-04-16 15:32:07 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 50536ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:23:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:33:12 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:33:25 -0600
+Processing by WelcomeController#index as HTML
+Started GET "/dashboard" for ::1 at 2022-04-16 15:38:33 -0600
+Completed 500 Internal Server Error in 317432ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/welcome_controller.rb:3:in `index'
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 10179ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:22:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:39:07 -0600
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 15377ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/welcome_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:39:25 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 15:39:44 -0600
+Started GET "/auth/google_oauth2/callback?state=18453564f27d91adf0f743605f9e652b7283343c45df3e3e&code=4%2F0AX4XfWiRxmBl_TX_VZVMRDV9Lg-FRLqxZQWIg-UAhkyj645p45b1f1xy6-8EmN1o0Y62JA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for ::1 at 2022-04-16 15:39:44 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"18453564f27d91adf0f743605f9e652b7283343c45df3e3e", "code"=>"4/0AX4XfWiRxmBl_TX_VZVMRDV9Lg-FRLqxZQWIg-UAhkyj645p45b1f1xy6-8EmN1o0Y62JA", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/register
+Completed 302 Found in 65ms (ActiveRecord: 41.5ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 15:39:44 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2022-04-16 15:39:49 -0600
+Processing by UsersController#index as HTML
+Started GET "/dashboard" for ::1 at 2022-04-16 15:40:49 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 6411ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:22:in `index'
+Started GET "/dashboard" for ::1 at 2022-04-16 15:41:31 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 26350ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:22:in `index'
+Started GET "/dashboard" for ::1 at 2022-04-16 15:42:01 -0600
+Completed 500 Internal Server Error in 137475ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:22:in `index'
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 44620ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:22:in `index'
+Started GET "/" for ::1 at 2022-04-16 15:42:57 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `get_by_email' for UserFacade:Class):
+    13: 
+    14:   <body>
+    15: 
+    16:   <% if !current_user%>
+    17:   <a id="nav-link" href="/auth/google_oauth2"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+    18: 
+    19:   <% elsif current_user%>
+  
+app/controllers/application_controller.rb:9:in `current_user'
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb__2123311162151872676_56080'
+Started GET "/" for ::1 at 2022-04-16 15:44:02 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2022-04-16 15:44:12 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-04-16 15:45:27 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:45:28 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2022-04-16 15:45:30 -0600
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 15:45:30 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 15:45:46 -0600
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 15:45:46 -0600
+Started GET "/auth/google_oauth2/callback?state=91e8836f290df8c661a3f94c0f62ae2c89f89ddcf2ab4d03&code=4%2F0AX4XfWi50RtbgCVmLsz8hTerGH6rUeuRoJfYtYcDBHtTyaz4uQwHxUiR1reXpMwmnH81TQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for ::1 at 2022-04-16 15:45:46 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"91e8836f290df8c661a3f94c0f62ae2c89f89ddcf2ab4d03", "code"=>"4/0AX4XfWi50RtbgCVmLsz8hTerGH6rUeuRoJfYtYcDBHtTyaz4uQwHxUiR1reXpMwmnH81TQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+Completed 500 Internal Server Error in 29337ms (ActiveRecord: 12.2ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/" for ::1 at 2022-04-16 15:46:26 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 15:46:28 -0600
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 15:46:28 -0600
+Started GET "/auth/google_oauth2/callback?state=cf26fa6319b715f025683606d53336357b3532dfbaa3ff85&code=4%2F0AX4XfWiZNKMbRBTmmQaTh2wRmc_X6iGwajXB06aPkmzxpdTplSAX_rO4vY2USfAABcT46w&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none" for ::1 at 2022-04-16 15:46:28 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"cf26fa6319b715f025683606d53336357b3532dfbaa3ff85", "code"=>"4/0AX4XfWiZNKMbRBTmmQaTh2wRmc_X6iGwajXB06aPkmzxpdTplSAX_rO4vY2USfAABcT46w", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/register
+Completed 302 Found in 27ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 15:46:28 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/register" for ::1 at 2022-04-16 15:48:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/register" for ::1 at 2022-04-16 15:48:48 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/register" for ::1 at 2022-04-16 15:49:57 -0600
+Processing by RegisterController#update as HTML
+Completed 500 Internal Server Error in 28725ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/register_controller.rb:3:in `update'
+Started GET "/register" for ::1 at 2022-04-16 15:50:30 -0600
+Processing by RegisterController#update as HTML
+Completed 500 Internal Server Error in 19371ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/register_controller.rb:4:in `update'
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 15:52:14 -0600
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 15:52:14 -0600
+Started GET "/auth/google_oauth2/callback?state=f7d67f4674ed2bae5ceab07a2e0f3887ac1d0002e29bcda4&code=4%2F0AX4XfWiaoFyh3At78uFcovPRKA1jVjNAWwhPAD-m0E2tRHglHtjC7ES29j66tiRQq2jO4w&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none" for ::1 at 2022-04-16 15:52:15 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"f7d67f4674ed2bae5ceab07a2e0f3887ac1d0002e29bcda4", "code"=>"4/0AX4XfWiaoFyh3At78uFcovPRKA1jVjNAWwhPAD-m0E2tRHglHtjC7ES29j66tiRQq2jO4w", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/register
+Completed 302 Found in 21ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 15:52:15 -0600
+Processing by RegisterController#update as HTML
+Completed 500 Internal Server Error in 89660ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/register_controller.rb:4:in `update'
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 15:53:49 -0600
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 15:53:49 -0600
+Started GET "/auth/google_oauth2/callback?state=48b0898607a2e80c581db67b26c6a8552df4ed6706fd24d9&code=4%2F0AX4XfWhk9PekCv4J2BLLsf36dB8wsyiozXWdOo5ku3s7fWtP-zFI4EG7XSutau_To5Bzag&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for ::1 at 2022-04-16 15:53:50 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"48b0898607a2e80c581db67b26c6a8552df4ed6706fd24d9", "code"=>"4/0AX4XfWhk9PekCv4J2BLLsf36dB8wsyiozXWdOo5ku3s7fWtP-zFI4EG7XSutau_To5Bzag", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/register
+Completed 302 Found in 28ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 15:53:50 -0600
+Processing by RegisterController#update as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+Completed 500 Internal Server Error in 96415ms (ActiveRecord: 0.4ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/register_controller.rb:4:in `update'
+Started GET "/register" for ::1 at 2022-04-16 15:55:34 -0600
+Processing by RegisterController#update as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+Completed 406 Not Acceptable in 36ms (ActiveRecord: 7.5ms)
+
+
+  
+ActionController::UnknownFormat (RegisterController#update is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.7) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.7) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.7) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.7) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.7) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.7) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.7) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/builder.rb:44:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.7) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.7) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/register" for ::1 at 2022-04-16 15:55:49 -0600
+Processing by RegisterController#update as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+Completed 406 Not Acceptable in 33ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::UnknownFormat (RegisterController#update is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.7) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.7) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.7) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.7) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.7) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.7) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.7) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/builder.rb:44:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.7) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.7) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/register" for ::1 at 2022-04-16 15:56:02 -0600
+Processing by RegisterController#update as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/update.html.erb within layouts/application
+  Rendered register/update.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 15:59:00 -0600
+Processing by RegisterController#update as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/update.html.erb within layouts/application
+  Rendered register/update.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 32ms (Views: 26.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:00:37 -0600
+Processing by RegisterController#update as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/update.html.erb within layouts/application
+  Rendered register/update.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:01:27 -0600
+Processing by RegisterController#update as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/update.html.erb within layouts/application
+  Rendered register/update.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 30.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 16:02:41 -0600
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 16:02:41 -0600
+Started GET "/auth/google_oauth2/callback?state=96ecde1a8bf98ab68b026256f7e7d4e68771ac539bced821&code=4%2F0AX4XfWgN94miA3kTstY-4poA5YfL26KGcTXp_N98Gv5CbWx8duKkJyIYoWi3y69_IYKznA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none" for ::1 at 2022-04-16 16:02:41 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"96ecde1a8bf98ab68b026256f7e7d4e68771ac539bced821", "code"=>"4/0AX4XfWgN94miA3kTstY-4poA5YfL26KGcTXp_N98Gv5CbWx8duKkJyIYoWi3y69_IYKznA", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/register
+Completed 302 Found in 29ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:02:42 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/register" for ::1 at 2022-04-16 16:04:12 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:05:34 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 58ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:06:16 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:06:55 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:07:11 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 35ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:07:20 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:08:54 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 58ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:09:32 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:09:49 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:09:49 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:10:17 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&authenticity_token=eq6QtTEh3JepNJmclQgPHDj2LevDqdr5e%2B4mhLHxYiZpzN%2BpPBta4Zt7QXgxAeuc1qcCQQ6MjjWxZw%2BlxW0G7g%3D%3D&name=Joseph+W+Galvin&dob=&commit=Save+" for ::1 at 2022-04-16 16:11:00 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eq6QtTEh3JepNJmclQgPHDj2LevDqdr5e+4mhLHxYiZpzN+pPBta4Zt7QXgxAeuc1qcCQQ6MjjWxZw+lxW0G7g==", "name"=>"Joseph W Galvin", "dob"=>"", "commit"=>"Save "}
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&authenticity_token=EF%2FSvGO6BqZY%2FItq8wRX0GLRt%2BRWyEnFro0Etmo0Id8DPZ2gboCA0GqzU45XDbNQjICYTpvtHQlkBC2XHqhFFw%3D%3D&name=Joseph+W+Galvin&dob=2022-04-13&commit=Save+" for ::1 at 2022-04-16 16:17:42 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EF/SvGO6BqZY/Itq8wRX0GLRt+RWyEnFro0Etmo0Id8DPZ2gboCA0GqzU45XDbNQjICYTpvtHQlkBC2XHqhFFw==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-13", "commit"=>"Save "}
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 16:17:59 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 32832ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/users_controller.rb:21:in `index'
+Started GET "/register?utf8=%E2%9C%93&authenticity_token=EF%2FSvGO6BqZY%2FItq8wRX0GLRt%2BRWyEnFro0Etmo0Id8DPZ2gboCA0GqzU45XDbNQjICYTpvtHQlkBC2XHqhFFw%3D%3D&name=Joseph+W+Galvin&dob=2022-04-13&commit=Save+" for ::1 at 2022-04-16 16:18:34 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EF/SvGO6BqZY/Itq8wRX0GLRt+RWyEnFro0Etmo0Id8DPZ2gboCA0GqzU45XDbNQjICYTpvtHQlkBC2XHqhFFw==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-13", "commit"=>"Save "}
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&authenticity_token=EF%2FSvGO6BqZY%2FItq8wRX0GLRt%2BRWyEnFro0Etmo0Id8DPZ2gboCA0GqzU45XDbNQjICYTpvtHQlkBC2XHqhFFw%3D%3D&name=Joseph+W+Galvin&dob=2022-04-13&commit=Save+" for ::1 at 2022-04-16 16:18:35 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EF/SvGO6BqZY/Itq8wRX0GLRt+RWyEnFro0Etmo0Id8DPZ2gboCA0GqzU45XDbNQjICYTpvtHQlkBC2XHqhFFw==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-13", "commit"=>"Save "}
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 16:18:38 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `email' for #<UsersController:0x00007fe63e0710d0>):
+  
+app/controllers/users_controller.rb:22:in `index'
+Started GET "/dashboard" for ::1 at 2022-04-16 16:19:02 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by' for UserFacade:Class):
+  
+app/controllers/users_controller.rb:22:in `index'
+Started GET "/dashboard" for ::1 at 2022-04-16 16:19:13 -0600
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by' for UserFacade:Class):
+  
+app/controllers/users_controller.rb:22:in `index'
+Started GET "/register?utf8=%E2%9C%93&authenticity_token=eq6QtTEh3JepNJmclQgPHDj2LevDqdr5e%2B4mhLHxYiZpzN%2BpPBta4Zt7QXgxAeuc1qcCQQ6MjjWxZw%2BlxW0G7g%3D%3D&name=Joseph+W+Galvin&dob=&commit=Save+" for ::1 at 2022-04-16 16:19:22 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eq6QtTEh3JepNJmclQgPHDj2LevDqdr5e+4mhLHxYiZpzN+pPBta4Zt7QXgxAeuc1qcCQQ6MjjWxZw+lxW0G7g==", "name"=>"Joseph W Galvin", "dob"=>"", "commit"=>"Save "}
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 16:19:24 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22
+Redirected to http://localhost:3000/register
+Completed 302 Found in 42ms (ActiveRecord: 22.4ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:19:24 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:19:47 -0600
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/joegalvin/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 37ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for ::1 at 2022-04-16 16:19:50 -0600
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 16:19:50 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 16:19:52 -0600
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 16:19:52 -0600
+Started GET "/auth/google_oauth2/callback?state=b1863565cda647c7a2b7c54c9e42be0e955b95397ffb8ed0&code=4%2F0AX4XfWhLfIfiVij-iKtGMh6qR0xCQL_PsriAiJvN8DvE3hA7s2v5gRkMPXru8XoQ_qRzSA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none" for ::1 at 2022-04-16 16:19:52 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"b1863565cda647c7a2b7c54c9e42be0e955b95397ffb8ed0", "code"=>"4/0AX4XfWhLfIfiVij-iKtGMh6qR0xCQL_PsriAiJvN8DvE3hA7s2v5gRkMPXru8XoQ_qRzSA", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/register
+Completed 302 Found in 31ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:19:53 -0600
+Processing by RegisterController#new as HTML
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:20:32 -0600
+Processing by RegisterController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+Started GET "/register?utf8=%E2%9C%93&authenticity_token=dbPcXC6fKp4OxeX3Z3yUeYhWaFp%2BJ94KX8hyzq7FmfBFVx2%2BAkzO43JBwncH%2Ffp5HZGtuwZ9Usc%2FT%2Bj0kyZc%2FA%3D%3D&name=Joseph+W+Galvin&dob=2022-04-11&commit=Save+" for ::1 at 2022-04-16 16:23:06 -0600
+Completed 500 Internal Server Error in 158817ms (ActiveRecord: 7.3ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/register_controller.rb:4:in `new'
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dbPcXC6fKp4OxeX3Z3yUeYhWaFp+J94KX8hyzq7FmfBFVx2+AkzO43JBwncH/fp5HZGtuwZ9Usc/T+j0kyZc/A==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-11", "commit"=>"Save "}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 9.4ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&authenticity_token=dbPcXC6fKp4OxeX3Z3yUeYhWaFp%2BJ94KX8hyzq7FmfBFVx2%2BAkzO43JBwncH%2Ffp5HZGtuwZ9Usc%2FT%2Bj0kyZc%2FA%3D%3D&name=Joseph+W+Galvin&dob=2022-04-11&commit=Save+" for ::1 at 2022-04-16 16:23:19 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dbPcXC6fKp4OxeX3Z3yUeYhWaFp+J94KX8hyzq7FmfBFVx2+AkzO43JBwncH/fp5HZGtuwZ9Usc/T+j0kyZc/A==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-11", "commit"=>"Save "}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&_method=patch&authenticity_token=8tOMOokMrG6naa5YPV1nfDnuiJJ0AWX%2B4%2FQL6rnCo6bCN03Ypd9IE9vtidhd3Al8rClNcwxb6TODc5HQhCFmqg%3D%3D&name=Joseph+W+Galvin&dob=2022-04-03&commit=Save+" for ::1 at 2022-04-16 16:23:26 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8tOMOokMrG6naa5YPV1nfDnuiJJ0AWX+4/QL6rnCo6bCN03Ypd9IE9vtidhd3Al8rClNcwxb6TODc5HQhCFmqg==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-03", "commit"=>"Save "}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&_method=patch&authenticity_token=HpXveuS42rrm1GuRNik%2BSj0tFgBx7Ua5pUTbyNBVK2gucS6YyGs%2Bx5pQTBFWqFBKqOrT4Qm3ynTFw0Hy7bbuZA%3D%3D&name=Joseph+W+Galvin&dob=2022-04-11&commit=Save+" for ::1 at 2022-04-16 16:26:17 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HpXveuS42rrm1GuRNik+Sj0tFgBx7Ua5pUTbyNBVK2gucS6YyGs+x5pQTBFWqFBKqOrT4Qm3ynTFw0Hy7bbuZA==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-11", "commit"=>"Save "}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 18.4ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 16:26:44 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22
+Redirected to http://localhost:3000/register
+Completed 302 Found in 11ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:26:44 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/register"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2022-04-16 16:27:35 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22
+Redirected to http://localhost:3000/register
+Completed 302 Found in 14ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:27:35 -0600
+Processing by RegisterController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&_method=patch&authenticity_token=u9hKVYs%2BpRGjX8p%2FIzS0YDi9dWKgtRSRcyBb1sWjKMyLPIu3p%2B1BbN%2Fb7f9DtdpgrXqwg9jvmFwTp8Hs%2BEDtwA%3D%3D&name=Joseph+W+Galvin&dob=2022-04-04&commit=Save+" for ::1 at 2022-04-16 16:27:42 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u9hKVYs+pRGjX8p/IzS0YDi9dWKgtRSRcyBb1sWjKMyLPIu3p+1BbN/b7f9DtdpgrXqwg9jvmFwTp8Hs+EDtwA==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-04", "commit"=>"Save "}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&_method=patch&authenticity_token=oVdjv%2FAiWeaW4Rk5Bzp9bwIMBpByhTAImWgY7eDsioORs6Jd3PG9m%2BplPrlnuxNvl8vDcQrfvMX574LX3Q9Pjw%3D%3D&name=Joseph+W+Galvin&dob=2022-04-11&commit=Save+" for ::1 at 2022-04-16 16:30:40 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oVdjv/AiWeaW4Rk5Bzp9bwIMBpByhTAImWgY7eDsioORs6Jd3PG9m+plPrlnuxNvl8vDcQrfvMX574LX3Q9Pjw==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-11", "commit"=>"Save "}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+Completed 406 Not Acceptable in 71ms (ActiveRecord: 19.7ms)
+
+
+  
+ActionController::UnknownFormat (RegisterController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.7) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.7) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.7) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.7) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.7) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.7) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.7) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.7) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.7) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.7) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.7) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (2.1.0) lib/omniauth/strategy.rb:202:in `call!'
+omniauth (2.1.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (2.1.0) lib/omniauth/builder.rb:44:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.7) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.7) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/register?utf8=%E2%9C%93&_method=patch&authenticity_token=oVdjv%2FAiWeaW4Rk5Bzp9bwIMBpByhTAImWgY7eDsioORs6Jd3PG9m%2BplPrlnuxNvl8vDcQrfvMX574LX3Q9Pjw%3D%3D&name=Joseph+W+Galvin&dob=2022-04-11&commit=Save+" for ::1 at 2022-04-16 16:31:04 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oVdjv/AiWeaW4Rk5Bzp9bwIMBpByhTAImWgY7eDsioORs6Jd3PG9m+plPrlnuxNvl8vDcQrfvMX574LX3Q9Pjw==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-11", "commit"=>"Save "}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&_method=patch&authenticity_token=rabeR6TVoeRzC4Md2HFugOETfdQK5GoOUJbRrAvsg%2BKdQh%2BliAZFmQ%2BPpJ248ACAdNS4NXK%2B5sMwEUuWNg9G7g%3D%3D&name=Joseph+W+Galvin&dob=2022-04-10&commit=Save+" for ::1 at 2022-04-16 16:31:10 -0600
+Processing by RegisterController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rabeR6TVoeRzC4Md2HFugOETfdQK5GoOUJbRrAvsg+KdQh+liAZFmQ+PpJ248ACAdNS4NXK+5sMwEUuWNg9G7g==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-10", "commit"=>"Save "}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/register_controller.rb:3
+  Rendering register/new.html.erb within layouts/application
+  Rendered register/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&_method=patch&authenticity_token=rabeR6TVoeRzC4Md2HFugOETfdQK5GoOUJbRrAvsg%2BKdQh%2BliAZFmQ%2BPpJ248ACAdNS4NXK%2B5sMwEUuWNg9G7g%3D%3D&name=Joseph+W+Galvin&dob=2022-04-10&commit=Save+" for ::1 at 2022-04-16 16:32:57 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rabeR6TVoeRzC4Md2HFugOETfdQK5GoOUJbRrAvsg+KdQh+liAZFmQ+PpJ248ACAdNS4NXK+5sMwEUuWNg9G7g==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-10", "commit"=>"Save "}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 12.7ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/register?utf8=%E2%9C%93&_method=patch&authenticity_token=0DFdj2TlcHm4HFENF%2F1PK%2BrbaVUYSZHYxCiRFxwWICng1ZxtSDaUBMSYdo13fCErfxystGATHRWkrwstIfXlJQ%3D%3D&name=Joseph+W+Galvin&dob=2022-04-19&commit=Save+" for ::1 at 2022-04-16 16:33:03 -0600
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0DFdj2TlcHm4HFENF/1PK+rbaVUYSZHYxCiRFxwWICng1ZxtSDaUBMSYdo13fCErfxystGATHRWkrwstIfXlJQ==", "name"=>"Joseph W Galvin", "dob"=>"2022-04-19", "commit"=>"Save "}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for ::1 at 2022-04-16 16:33:31 -0600
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 16:33:31 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 16:33:32 -0600
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 16:33:32 -0600
+Started GET "/auth/google_oauth2/callback?state=530a9d8f2f6d81165cd0ed2e9eb76bca038068568a8514d9&code=4%2F0AX4XfWjyr1cEkD3t6D3KNcDzkIm9j08_zAT2oTatj0JUvWuzCajhgEzmb5lwOlZDm_6oyg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none" for ::1 at 2022-04-16 16:33:32 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"530a9d8f2f6d81165cd0ed2e9eb76bca038068568a8514d9", "code"=>"4/0AX4XfWjyr1cEkD3t6D3KNcDzkIm9j08_zAT2oTatj0JUvWuzCajhgEzmb5lwOlZDm_6oyg", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile openid https://www.googleapis.com/auth/userinfo.email", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6
+Redirected to http://localhost:3000/register
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:33:33 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:35:08 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 31ms (Views: 26.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:35:09 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:35:20 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 16:35:28 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+Redirected to http://localhost:3000/register
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:35:28 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for ::1 at 2022-04-16 16:35:31 -0600
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 16:35:31 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 16:35:32 -0600
+Started GET "/auth/google_oauth2/callback?state=af3b45d2d4f1ea97c8cc107f7e5c012a036e2cd1c73da815&code=4%2F0AX4XfWijUOWhnSqGtavhZuSO_ZZBM_hTswf7dY_FSI8ZMPCV25eNYT64HkgnMQM-KY1Fmw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none" for ::1 at 2022-04-16 16:35:33 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"af3b45d2d4f1ea97c8cc107f7e5c012a036e2cd1c73da815", "code"=>"4/0AX4XfWijUOWhnSqGtavhZuSO_ZZBM_hTswf7dY_FSI8ZMPCV25eNYT64HkgnMQM-KY1Fmw", "scope"=>"email profile openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6
+Redirected to http://localhost:3000/register
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:35:33 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for ::1 at 2022-04-16 16:35:36 -0600
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2022-04-16 16:35:36 -0600
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 16:35:37 -0600
+Started GET "/auth/google_oauth2" for ::1 at 2022-04-16 16:35:37 -0600
+Started GET "/auth/google_oauth2/callback?state=db2a9e96c0cd6dc606a577b1f7d56f5a702fd2bdd1e9ea91&code=4%2F0AX4XfWgHJ50i2maa3sShFD0bhLAR1e12ASEQTNVEmT1fyPobdi63LrzEB23GTN9D8exnow&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for ::1 at 2022-04-16 16:35:37 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"state"=>"db2a9e96c0cd6dc606a577b1f7d56f5a702fd2bdd1e9ea91", "code"=>"4/0AX4XfWgHJ50i2maa3sShFD0bhLAR1e12ASEQTNVEmT1fyPobdi63LrzEB23GTN9D8exnow", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"none"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6
+Redirected to http://localhost:3000/register
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/register" for ::1 at 2022-04-16 16:35:38 -0600
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jwgalvin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+
+
