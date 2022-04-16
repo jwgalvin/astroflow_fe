@@ -6,27 +6,20 @@ class UsersController < ApplicationController
   def create
     auth_hash = request.env['omniauth.auth']
     email = auth_hash['info']['email']
-    #binding.pry
     user = User.find_by(email: email)
     session[:access_token] = auth_hash['credentials']['token']
-    #redirect_to "dashboard"
+    redirect_to "/dashboard"
   end
 
+  def index
+  end
+  
   def show
-    # if params.include?("party_id")
-    #  @user = User.find(params[:id])
-    #  change_status(params[:party_id])
-    # else
-    #   @user = User.find_by(id: session[:user_id])
-    # end
-  end
-
-  def login_form
+    binding.pry
   end
 
   def login_user
     user = User.find_by(email: params[:email])
-    #binding.pry
     if user.authenticate(params[:password])
       session[:user_id] = user.id
       redirect_to "/users/dashboard?=#{user.email}"
