@@ -6,18 +6,10 @@ class UsersController < ApplicationController
   def create
     auth_hash = request.env['omniauth.auth']
     email = auth_hash['info']['email']
-    user = User.find_or_create_by(email: email)
+    #binding.pry
+    user = User.find_by(email: email)
     session[:access_token] = auth_hash['credentials']['token']
-    # user = User.create(user_params)
-
-    # if user.save
-    #   session[:user_id] = user.id
-    #   redirect_to "/users/dashboard?=#{user.email}"
-    # else
-    #   redirect_to "/register"
-    #   flash[:alert] = "Error: #{error_message(user.errors)}"
-      #flash[:alert] = "Error: #{user.errors.full_messages.to_sentence}"
-    # end
+    #redirect_to "dashboard"
   end
 
   def show
