@@ -7,7 +7,8 @@ Rails.application.routes.draw do
     get '/register', to: 'users#edit'
     patch '/register', to: 'users#update'
     resources :login, only: [:index]
-    #resources :register, only: [:new, :edit]
-    resources :dashboard, only: [:index], controller: :users
+    resources :dashboard, only: [:index], controller: :users do
+      resources :flowchart, only: [:show], controller: :flowchart
+    end
     resources :logout, only: [:logout], controller: :users
     end

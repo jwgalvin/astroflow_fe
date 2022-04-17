@@ -13,44 +13,16 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-  <% if !current_user%>
-  <a id="nav-link" href="/auth/google_oauth2"><span class="glyphicon glyphicon-log-in"></span> Log in</a>
-
-  <% elsif current_user%>
-    <a id="nav-item" href="/dashboard">Dashboard</a>
-    <a id="logout border border-dark" href="/logout">Log out</a>
-    <% end %></nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Directory
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/dashboard">Dashboard</a>
-              <a class="dropdown-item" href="/dashboard/flowchary">Go To Flowchart</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav_space">
+      <a class="navbar-brand" href="#">Site Navigation:</a>
+      <% if !current_user %>
+      <a class="nav-item nav_space" href="/auth/google_oauth2">Sign or Log In</a>
+      <% else %>
+        <a class="nav-item nav_space"> <%= button_to "Dashboard", "/dashboard", method: :get %></a>
+        <a class="nav-item nav_space"><%= button_to "Log Out", "/logout", method: :get %></a>
+        <a class="nav-item nav_space"><%= button_to "Flowchart", "/dashboard/flowchart", method: :get %></a>
+        <a class="nav-item nav_space"><%= button_to "Edit profile here", "/register", method: :get %></a>
+        <%end%>
     </nav>
     <%= yield %>
   </body>
