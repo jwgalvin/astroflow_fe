@@ -12,12 +12,12 @@ RSpec.describe 'Welcome page', type: :feature do
 
   end
 
-  it "has a login button" do
-    click_button("Sign In")
-    expect(current_path).to eq("/login")
+  it "After Logging in the dashboard and logout button appear in Navbar " do
+    click_button("Log In")
+
   end
 
-  it "has a Register button" do
+  xit "has a Register button" do
     click_button("Register")
     expect(current_path).to eq("/register")
   end

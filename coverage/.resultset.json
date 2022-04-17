@@ -7,10 +7,25 @@
           null
         ]
       },
+      "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/controllers/welcome_controller.rb": {
         "lines": [
           1,
           1,
+          null,
           null,
           null,
           null
@@ -26,29 +41,11 @@
           null,
           null,
           1,
-          5,
+          2,
           null,
           null,
           1,
           0,
-          null,
-          null
-        ]
-      },
-      "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/controllers/login_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/controllers/register_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
           null,
           null
         ]
@@ -56,15 +53,6 @@
       "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/mailers/application_mailer.rb": {
         "lines": [
           0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/models/application_record.rb": {
-        "lines": [
           0,
           0,
           0
@@ -80,46 +68,37 @@
         "branches": {
         }
       },
+      "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/controllers/register_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/controllers/login_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/controllers/users_controller.rb": {
         "lines": [
           0,
           null,
           0,
           0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
           0,
           0,
           0,
           null,
-          0,
-          0,
           null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
           0,
           0,
           0,
@@ -131,12 +110,33 @@
           0,
           0,
           0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
           null,
           0,
           0,
           null,
           0,
+          0,
+          0,
+          0,
+          0,
           null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
           null,
           0
         ],
@@ -150,32 +150,6 @@
           null,
           0,
           0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/joegalvin/turing/3module/projects/astroflow_fe/app/services/backend_service.rb": {
-        "lines": [
           0,
           0,
           null,
@@ -247,6 +221,6 @@
         }
       }
     },
-    "timestamp": 1650051914
+    "timestamp": 1650152937
   }
 }

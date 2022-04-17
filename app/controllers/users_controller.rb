@@ -5,8 +5,8 @@ class UsersController < ApplicationController
     email = auth_hash['info']['email']
     user = User.find_or_create_by(email: email)
     session[:access_token] = auth_hash['info']['email']
-    #binding.pry
 
+    UserFacade.add_user(email)
     if !user.dob || !user.name
       redirect_to "/register"
     else
@@ -15,27 +15,25 @@ class UsersController < ApplicationController
   end
 
   def index
-    #binding.pry
-    user = User.find_by(email: session[:access_token])
-
-    if !user.dob
+    @user = User.find_by(email: session[:access_token])
+    if !@user.dob
       redirect_to "/register"
-    else
-      redirect_to "/dashboard"
     end
+
   end
 
   def show
     binding.pry
   end
 
-  def new
+  def edit
     user = User.find_by(email: session[:access_token])
+    if params[:name] && params[:dob]
+      user.update(user_params)
+      redirect_to "/dashboard"
+    end
   end
 
-  def edit
-    binding.pry
-  end
 
   def logout
     session.destroy
@@ -43,6 +41,7 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
     params.permit(:name, :email, :dob)
   end
