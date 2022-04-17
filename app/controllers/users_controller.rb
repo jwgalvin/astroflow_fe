@@ -19,7 +19,9 @@ class UsersController < ApplicationController
     if !@user.dob
       redirect_to "/register"
     end
-
+    zodiac_sign = "leo"
+    day = "today"
+    @horoscope = HoroscopeFacade.get_today_horoscope(zodiac_sign, day)
   end
 
   def show
