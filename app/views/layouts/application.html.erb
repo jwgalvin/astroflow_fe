@@ -20,8 +20,8 @@
       <% else %>
         <a class="nav-item nav_space"> <%= button_to "Dashboard", "/dashboard", method: :get %></a>
         <a class="nav-item nav_space"><%= button_to "Log Out", "/logout", method: :get %></a>
-        <a class="nav-item nav_space"><%= button_to "Flowchart", "/dashboard/flowchart", method: :get %></a>
-        <a class="nav-item nav_space"><%= button_to "Edit profile here", "/register", method: :get %></a>
+        <a class="nav-item nav_space"><%= button_to "Flowchart", "/flowchart", method: :get %></a>
+        <a class="nav-item nav_space"><%= button_to "Edit profile here", "/edit", method: :get %></a>
         <%end%>
     </nav>
     <%= yield %>
