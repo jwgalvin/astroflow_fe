@@ -13,11 +13,12 @@
               </div>
               <form>
                 <p class="text-left"></p>
-              <p style="color:white"><%= form_with url: '/register', method: :patch, local: true do |f| %>
+              <p style="color:white">
+              <%= form_with url: '/create', method: :patch, local: true do |f| %>
                   <%= f.label :name %>
                   <%= f.text_field :name  %>
-                  <%= f.label :date_of_birth %>
-                  <%= f.date_field :dob%>
+                  <%= f.label :zodiac_sign %>
+                  <%= f.select :zodiac_sign, ['Aquarius','Pisces','Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn'] %>
 
                   <%= f.submit %>
                 <% end %>
