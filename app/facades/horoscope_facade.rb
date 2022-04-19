@@ -1,7 +1,7 @@
 class HoroscopeFacade 
   class << self 
-    def get_today_horoscope(zodiac_sign, day)
-      data = HoroscopeService.call_today_horoscope(zodiac_sign, day)
+    def get_today_horoscope(zodiac_sign)
+      data = HoroscopeService.call_today_horoscope(zodiac_sign)
       horoscope(data)
     end 
 
@@ -16,7 +16,21 @@ class HoroscopeFacade
     private 
     
     def horoscope(data) 
-      Horoscope.new(date: data[:current_date], description: data[:description], mood: data[:mood], lucky_number: data[:lucky_number])
+      data1 = data[:today_horoscope]
+      data2 = data[:yesterday_horoscope]
+    
+      horoscopes = [
+        Horoscope.new(current_date: data1[:current_date], description: data1[:description],
+                      compatibility: data1[:compatibility], color: data1[:color],
+                      mood: data1[:mood], lucky_number: data1[:lucky_number], 
+                      lucky_time: data1[:lucky_time], moon: data1[:moon], moon_phase: data1[:moon_phase]),
+
+        Horoscope.new(current_date: data2[:current_date], description: data2[:description], 
+                      compatibility: data1[:compatibility], color: data1[:color],
+                      mood: data2[:mood], lucky_number: data2[:lucky_number], 
+                      lucky_time: data2[:lucky_time], moon: data2[:moon], moon_phase: data2[:moon_phase]),
+
+      ]
     end 
   end 
 end 
