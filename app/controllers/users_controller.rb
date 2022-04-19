@@ -5,9 +5,8 @@ class UsersController < ApplicationController
     email = auth_hash['info']['email']
     user = User.find_or_create_by(email: email)
     session[:access_token] = auth_hash['info']['email']
-
-    UserFacade.add_user(email)
     if !user.zodiac_sign || !user.name
+      UserFacade.add_user(email)
       redirect_to "/sign_up"
     else
       redirect_to "/dashboard"
@@ -16,7 +15,7 @@ class UsersController < ApplicationController
 
   def sign_up 
     user = User.find_by(email: session[:access_token])
-    if !user.zodiac_sign || !user.name
+    if params.include?("zodiac_sign")
       user.update(user_params)
       redirect_to "/dashboard"
     end 
