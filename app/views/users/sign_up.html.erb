@@ -1,0 +1,55 @@
+<br><div class="container py-5 h-100">
+  <div class="row d-flex justify-content-center align-items-left h-100">
+    <div class="col-xl-10 disp">
+      <div class="card rounded-1 text-black d-flex justify-content-center background2">
+        <br><h1 style="color:red">Astroflow</h1>
+          <div class="col-lg-6 mx-md-auto">
+            <div class="card-body p-md-5 mx-md-4">
+
+              <div class="text-left">
+
+                <h4 class="mt-1 mb-5 pb-1">Fill out this information to proceed.</h4>
+
+              </div>
+              <form>
+                <p class="text-left"></p>
+              <p style="color:white">
+                <%= form_with url: '/register', method: :patch, local: true do |f| %>
+                  <%= f.label :name %>
+                  <%= f.text_field :name  %>
+                  <%= f.label :zodiac_sign %>
+                  <%= f.select :zodiac_sign, ['Aquarius','Pisces','Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn'] %>
+
+                  <%= f.submit %>
+                <% end %>
+
+
+  <br>
+  <form>
+    </div>
+
+                <div class="d-flex align-items-left  pb-4">
+                  <div class="row rt">
+
+                </div>
+              
+
+
+            </div>
+          </div>
+
+      </div>
+<p class="foot text-white text-center"> Aries (March 21 – April 19) 
+              Taurus (April 20 – May 20)
+              Gemini (May 21 – June 20)
+              Cancer (June 21 – July 22)
+              Leo (July 23 – August 22)
+              Virgo (August 23 – September 22)
+              Libra (September 23 – October 22)
+              Scorpio (October 23 – November 21)
+              Sagittarius (November 22 – December 21)
+              Capricorn (December 22 – January 19)
+              Aquarius (January 20 – February 18)
+              Pisces (February 19 – March 20)
+             </p>
+    </div>
