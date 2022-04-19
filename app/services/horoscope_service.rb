@@ -1,19 +1,9 @@
 class HoroscopeService
   class << self 
-    def call_today_horoscope(zodiac_sign, day)
-      response = conn.get("/api/v1/horoscopes/find?sign=#{zodiac_sign}&day=#{day}")
-      parse_data(response)
+    def call_today_horoscope(zodiac_sign)
+      response = conn.get("/api/v1/horoscopes/find?sign=#{zodiac_sign}")
+      a = parse_data(response)
     end 
-
-    # def call_tomorrow_horoscope(zodiac_sign)
-    #   response = conn.post("/?sign=#{zodiac_sign}&day=tomorrow")
-    #   parse_data(response)
-    # end 
-
-    # def call_yesterday_horoscope(zodiac_sign)
-    #   response = conn.post("/?sign=#{zodiac_sign}&day=yesterday")
-    #   parse_data(response)
-    # end 
 
     private 
 
