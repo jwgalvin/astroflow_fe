@@ -13,13 +13,14 @@ class UsersController < ApplicationController
     end
   end
 
-  def sign_up 
-    user = User.find_by(email: session[:access_token])
+  def sign_up
+    user = User.find_or_create_by(email: session[:access_token])
     if params.include?("zodiac_sign")
+      #binding.pry
       user.update(user_params)
       redirect_to "/dashboard"
-    end 
-  end 
+    end
+  end
 
 
   def show
@@ -29,11 +30,12 @@ class UsersController < ApplicationController
       end
     horoscopes = HoroscopeFacade.get_today_horoscope(@user.zodiac_sign)
     @today_horoscope = horoscopes.first
-    @yesterday_horoscope = horoscopes.last 
+    @yesterday_horoscope = horoscopes.last
   end
 
   def edit
     user = User.find_by(email: session[:access_token])
+    binding.pry
     if params[:name] && params[:zodiac_sign]
       user.update(user_params)
       redirect_to "/dashboard"
