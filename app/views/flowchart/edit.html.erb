@@ -5,7 +5,7 @@
      <br>
        <p class="text-left"></p>
         
-<%= form_with url: '/create', method: :patch, local: true do |f| %>
+<%= form_with url: "http://localhost:5000/api/v1/users/daily_flow_chart?email=#{@user_email}", method: :patch, local: true do |f| %>
 <p class="foot text-white text-center">
                   <%= f.label :date%>
                   <%= f.date_field :date %>
@@ -16,12 +16,13 @@
                   <%= f.label :cramps%>
                   <%= f.select :cramps, ['Yes', 'No'] %>
                   <br>
-                  <%= f.label :emotion, "How are you feeling emotionally?"%>
-                  <%= f.date_field :emotion %>
-                  <br>
                   <%= f.label :flow_status%>
                   <%= f.select :flow_status, ['Light', 'Moderate', 'Heavy'] %>
                   <br>
-                  <%= f.submit %>
+                  <br>
+                  <%= f.label :emotions, "How are you feeling?"%>
+                  <%= f.text_area :emotions %>
+                  <br>
+                  <%= f.submit "Submit" %>
                 <% end %>
                 </p>
