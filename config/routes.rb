@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     post '/register', to: 'users#create'
     patch '/register', to: 'users#update'
     get '/flowchart', to: 'flowchart#index'
+    get '/flowchart/new', to: 'flowchart#new'
+    get '/flowchart/edit', to: 'flowchart#edit'
     get '/sign_up', to: 'users#sign_up'
     get '/dashboard', to: 'users#show'
  
