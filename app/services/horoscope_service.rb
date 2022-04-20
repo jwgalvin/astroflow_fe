@@ -2,7 +2,7 @@ class HoroscopeService
   class << self 
     def call_today_horoscope(zodiac_sign)
       response = conn.get("/api/v1/horoscopes/find?sign=#{zodiac_sign}")
-      a = parse_data(response)
+      parse_data(response)
     end 
 
     private 
