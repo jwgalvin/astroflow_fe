@@ -1,41 +1,41 @@
-<a id="button" class="button-left"><%= button_to "Edit profile here", "/register", method: :get %></a>
-<br><h1 id="dashboard-welcome"> Welcome <%= @user.name %>! </h1>
-<div id="dashboard" class="dash-main">
 
-  <div id="personal-info" class="container text_color display-padding2">
+<br><h1 id="dashboard-welcome"> Welcome <%= @user.name %>! </h1>
+<div id="dashboard" class="dash-main2">
+
+  <div id="personal-info" class="container text_color display-padding2 border-dash">
     <h3>Daily Horoscope</h3>
     <h4><%= @today_horoscope.current_date %></h4>
     <br>
-   <%= @today_horoscope.description %>
+   <h5><%= @today_horoscope.description %></h5>
    <br>
    <br>
    <h3>Today's Vibes</h3>
-   <h4>Color: <%= @today_horoscope.color %></h4>
-   <h4>Comptaibility: <%= @today_horoscope.compatibility %></h4>
-   <h4>Lucky Number: <%= @today_horoscope.lucky_number %></h4>
-   <h4>Lucky Time: <%= @today_horoscope.lucky_time %></h4>
-  
-   <h3>Moon</h3>
-   <h4>Moon: <%= @today_horoscope.moon %></h4>
-   <h4>Moon: <%= @today_horoscope.moon_phase %></h4>
+   <h5>Color: <%= @today_horoscope.color %></h5>
+   <h5>Compatability: <%= @today_horoscope.compatibility %></h5>
+   <h5>Lucky Number: <%= @today_horoscope.lucky_number %></h5>
+   <h5>Lucky Time: <%= @today_horoscope.lucky_time %></h5>
+
+   <br><h3>Moon</h3>
+   <h5>Moon: <%= @today_horoscope.moon %></h5>
+   <h5>Moon: <%= @today_horoscope.moon_phase %></h5>
 
 
   </div>
-  <div id="horoscope-stuff" class="container text_color display-padding">
+  <br><div id="horoscope-stuff" class="container text_color display-padding border-dash">
    <h3>Yesterday's Horoscope</h3>
     <h4><%= @yesterday_horoscope.current_date %></h4>
     <br>
-   <%= @yesterday_horoscope.description %>
+   <h5><%= @yesterday_horoscope.description %></h5>
    <br>
    <br>
    <h3>Yesterday's Vibes</h3>
-   <h4>Color: <%= @yesterday_horoscope.color %></h4>
-   <h4>Comptaibility: <%= @yesterday_horoscope.compatibility %></h4>
-   <h4>Lucky Number: <%= @yesterday_horoscope.lucky_number %></h4>
-   <h4>Lucky Time: <%= @yesterday_horoscope.lucky_time %></h4>
-  
+   <h5>Color: <%= @yesterday_horoscope.color %></h5>
+   <h5>Compatability: <%= @yesterday_horoscope.compatibility %></h5>
+   <h5>Lucky Number: <%= @yesterday_horoscope.lucky_number %></h5>
+   <h5>Lucky Time: <%= @yesterday_horoscope.lucky_time %></h5>
+
    <h3>Moon</h3>
-   <h4>Moon: <%= @yesterday_horoscope.moon %></h4>
-   <h4>Moon: <%= @yesterday_horoscope.moon_phase %></h4>
+   <h5>Moon: <%= @yesterday_horoscope.moon %></h5>
+   <h5>Moon: <%= @yesterday_horoscope.moon_phase %></h5>
   </div>
 </div>

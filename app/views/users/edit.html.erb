@@ -1,43 +1,48 @@
-<br><div class="container py-5 h-100">
-  <div class="row d-flex justify-content-center align-items-left h-100">
-    <div class="col-xl-10 disp">
-      <div class="card rounded-1 text-black d-flex justify-content-center background2">
-        <br><h1 style="color:red">Astroflow</h1>
-          <div class="col-lg-6 mx-md-auto">
-            <div class="card-body p-md-5 mx-md-4">
 
-              <div class="text-left">
-
-                <h4 class="mt-1 mb-5 pb-1">Fill out this information to proceed.</h4>
-
-              </div>
-              <form>
+<div class="form-body justify-center">
+  <br><p class="text-left background2"></p>
+    <div class="row">
+      <div class="form-content ">
+        <div class="container py-5 h-100">
+          <div class="card rounded-1 text-black d-flex justify-content-center background2">
+            <br><h1 style="color:red">Astroflow</h1>
+              <div class="card-body p-md-5 mx-md-4"><br>
+                <div class="text-left">
+                <h4 class="mt-1 mb-5 pb-1">Fill out this information to align your stars</h4>
+                </div>
+                <form class="form-content">
                 <p class="text-left"></p>
-              <p style="color:white">
+                <p style="color:white">
               <%= form_with url: '/create', method: :patch, local: true do |f| %>
                   <%= f.label :name %>
-                  <%= f.text_field :name  %>
-                  <%= f.label :zodiac_sign %>
+                  <%= f.text_field :name  %><br>
+                  <br><%= f.label :zodiac_sign %>
                   <%= f.select :zodiac_sign, ['Aquarius','Pisces','Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn'] %>
-
+                  <h5> If you don't know your sign check below</h5>
                   <%= f.submit %>
                 <% end %>
 
 
   <br>
-  <form>
-    </div>
-
-                <div class="d-flex align-items-left  pb-4">
-                  <div class="row rt">
-
-                </div>
-              <p class="foot text-white text-center">We don't post ya personal information.</p>
-
-
-            </div>
+  <p class="foot text-white text-center">We don't post ya personal information.</p>
           </div>
-
+        </div>
       </div>
-
     </div>
+  </div>
+</div>
+
+
+
+<div id="Sign&DOB&traits" class="opaque text_color text-center">Aries	March 21 -April 19	Energetic, candid and willful<br>
+Taurus	April 20 - May 20	Reliable, diligent and conservative<br>
+Gemini	May 21 - June 21	Quick-witted, capricious and cheerful<br>
+Cancer 	June 22 - July 22	Considerate, imaginative and sensitive<br>
+Leo 	July 23 - August 22	Enthusiastic, proud and arrogant<br>
+Virgo  	August 23 - September 22	Elegant, perfectionist and picky<br>
+Libra 	September 23 - October 23	Equitable, charming and hesitant<br>
+Scorpio 	October 24 - November 22	Insightful, mysterious and suspicious<br>
+Sagittarius	November 23 - December 21	Unconstrained, lively and rash<br>
+Capricorn 	December 22 - January 19	Perseverant, practical and lonely<br>
+Aquarius	January 20 - February 18	Smart, liberalistic and changeful<br>
+Pisces	February 19 - March 20	Romantic, kind and sentimental</div>
