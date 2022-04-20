@@ -6,6 +6,17 @@ RSpec.describe 'Welcome page', type: :feature do
     @user = User.create!(name: "Bobbo", email: "mep@yall.com", zodiac_sign: "Aquarius")
   end
 
+  it "has a logged out navbar", :vcr do
+    stub_omniauth
+    visit root_path
+    #save_and_open_page
+    expect(page).to have_content("Sign or Log In")
+    expect(page).to_not have_content("Dashboard")
+    expect(page).to_not have_content("Flowchart")
+    expect(page).to_not have_content("Log Out")
+    expect(page).to_not have_content("Edit profile here")
+  end
+
   it "is linked to from the user registration page", :vcr do
     stub_omniauth
     visit root_path
