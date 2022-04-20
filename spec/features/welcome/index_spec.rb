@@ -3,8 +3,7 @@ require 'rails_helper'
 
 RSpec.describe 'Welcome page', type: :feature do
   before(:each) do
-
-    @user = User.create!(name: "Bobbo", email: "mep@yall.com", zodiac_sign: "aquarius")
+    @user = User.create!(name: "Bobbo", email: "mep@yall.com", zodiac_sign: "Aquarius")
   end
 
   it "is linked to from the user registration page", :vcr do

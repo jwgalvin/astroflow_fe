@@ -84,8 +84,8 @@ def stub_omniauth
         uid: "12345678910",
         info: {
             email: "limsammy1@gmail.com",
-            first_name: "Sam",
-            last_name: "Lim"
+            name: "Sam",
+            zodiac_sign: "Aquarius"
         },
         credentials: {
             token: "abcdefg12345",
