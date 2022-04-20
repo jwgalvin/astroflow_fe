@@ -8,7 +8,7 @@ class HoroscopeService
     private 
 
     def conn 
-      Faraday.new(url: "http://localhost:5000")
+      Faraday.new(url: "https://astro-flow-be.herokuapp.com")
     end 
 
     def parse_data(response)
