@@ -23,6 +23,7 @@ group :development, :test do
   gem 'vcr'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
    gem 'rspec-rails'
+   gem 'launchy'
    gem 'capybara'
    gem 'pry'
    gem 'simplecov'
