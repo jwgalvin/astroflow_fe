@@ -35,7 +35,7 @@ class UsersController < ApplicationController
 
   def edit
     user = User.find_by(email: session[:access_token])
-    binding.pry
+    #binding.pry
     if params[:name] && params[:zodiac_sign]
       user.update(user_params)
       redirect_to "/dashboard"

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     get '/auth/google_oauth2/callback', to: 'users#sign_in'
     get '/logout', to: 'users#logout'
     get '/edit', to: 'users#edit'
+    patch '/edit', to:'users#edit'
     post '/register', to: 'users#sign_up'
     patch '/register', to: 'users#sign_up'
     get '/flowchart', to: 'flowchart#index'

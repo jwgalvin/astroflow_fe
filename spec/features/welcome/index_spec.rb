@@ -47,5 +47,19 @@ RSpec.describe 'Welcome page', type: :feature do
     expect(current_path).to eq("/sign_up")
   end
 
+  it 'goes straight to dashboard if already signed in', :vcr do
+    stub_omniauth
+    user = stub_omniauth[:info]
+    visit root_path
+    click_button 'Sign In'
 
+    fill_in 'name', with: "Sporty Spice"
+    select "Aquarius", from: :zodiac_sign
+
+    click_on('Save')
+    click_button("Log Out")
+    click_button("Sign In")
+    #save_and_open_page
+    expect(current_path).to eq("/dashboard")
+  end
 end
