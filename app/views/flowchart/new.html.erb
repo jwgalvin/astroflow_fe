@@ -1,15 +1,20 @@
+<div class="form-holder">
 
 <h1>Daily Flow Chart Form</h1>
-<br>     
+<br>
 <br>
      <br>
-       <p class="text-left"></p>
-        
+       <p class="text-left background2"></p>
+       <div class="form-body">
+         <div class="row">
+             <div class="form-content ">
+
 <%= form_with url: '/create', method: :patch, local: true do |f| %>
 <p class="foot text-white text-center">
                   <%= f.label :date%>
-                  <%= f.date_field :date %>
+                  <%= f.date_field :date, value: Date.today %>
                   <br>
+                  <div class="form-items opaque">
                   <%= f.label :bloating%>
                   <%= f.select :bloating, ['Yes', 'No'] %>
                   <br>
@@ -17,11 +22,17 @@
                   <%= f.select :cramps, ['Yes', 'No'] %>
                   <br>
                   <%= f.label :emotion, "How are you feeling emotionally?"%>
-                  <%= f.date_field :emotion %>
+                  <%= f.text_field :emotion, value: "Fill in" %>
                   <br>
                   <%= f.label :flow_status%>
                   <%= f.select :flow_status, ['Light', 'Moderate', 'Heavy'] %>
                   <br>
                   <%= f.submit %>
                 <% end %>
-                </p>
+              
+
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
