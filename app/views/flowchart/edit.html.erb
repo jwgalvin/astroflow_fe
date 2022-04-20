@@ -1,0 +1,27 @@
+
+<h1>Edit Daily Flow Chart</h1>
+<br>     
+<br>
+     <br>
+       <p class="text-left"></p>
+        
+<%= form_with url: '/create', method: :patch, local: true do |f| %>
+<p class="foot text-white text-center">
+                  <%= f.label :date%>
+                  <%= f.date_field :date %>
+                  <br>
+                  <%= f.label :bloating%>
+                  <%= f.select :bloating, ['Yes', 'No'] %>
+                  <br>
+                  <%= f.label :cramps%>
+                  <%= f.select :cramps, ['Yes', 'No'] %>
+                  <br>
+                  <%= f.label :emotion, "How are you feeling emotionally?"%>
+                  <%= f.date_field :emotion %>
+                  <br>
+                  <%= f.label :flow_status%>
+                  <%= f.select :flow_status, ['Light', 'Moderate', 'Heavy'] %>
+                  <br>
+                  <%= f.submit %>
+                <% end %>
+                </p>
