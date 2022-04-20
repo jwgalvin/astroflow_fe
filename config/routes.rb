@@ -11,8 +11,8 @@ Rails.application.routes.draw do
     get '/flowchart/edit', to: 'flowchart#edit'
     get '/sign_up', to: 'users#sign_up'
     get '/dashboard', to: 'users#show'
- 
+
     resources :login, only: [:index]
-    resources :dashboard, only: [:show], controller: :users 
+    resources :dashboard, only: [:show], controller: :users
     resources :logout, only: [:logout], controller: :users
 end

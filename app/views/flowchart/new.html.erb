@@ -13,23 +13,22 @@
 <p class="foot text-white text-center">
                   <%= f.label :date%>
                   <%= f.date_field :date, value: Date.today %>
-                  <br>
+
                   <div class="form-items opaque">
                   <%= f.label :bloating%>
                   <%= f.select :bloating, ['Yes', 'No'] %>
-                  <br>
-                  <%= f.label :cramps%>
+              <br><br><%= f.label :cramps%>
                   <%= f.select :cramps, ['Yes', 'No'] %>
-                  <br>
+                  <br><br>
                   <%= f.label :emotion, "How are you feeling emotionally?"%>
                   <%= f.text_field :emotion, value: "Fill in" %>
-                  <br>
+                  <br><br>
                   <%= f.label :flow_status%>
                   <%= f.select :flow_status, ['Light', 'Moderate', 'Heavy'] %>
-                  <br>
+                  <br><br>
                   <%= f.submit %>
                 <% end %>
-              
+
 
                    </div>
                </div>
