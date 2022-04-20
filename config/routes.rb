@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     patch '/register', to: 'users#update'
     get '/flowchart', to: 'flowchart#index'
     get '/flowchart/new', to: 'flowchart#new'
+    post '/flowchart/create', to: 'flowchart#create'
     get '/flowchart/edit', to: 'flowchart#edit'
     get '/sign_up', to: 'users#sign_up'
     get '/dashboard', to: 'users#show'

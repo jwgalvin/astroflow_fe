@@ -5,7 +5,7 @@ class UserService
     end
   private
     def conn
-      Faraday.new(url: "http://localhost:5000")
+      Faraday.new(url: "https://astro-flow-be.herokuapp.com")
     end
   end
 end
