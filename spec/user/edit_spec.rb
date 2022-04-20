@@ -19,6 +19,7 @@ RSpec.describe 'flowchart page', type: :feature do
   end
 
   it "can edit the user", :vcr do
+
     click_button("Edit profile here")
     fill_in 'name', with: "Sturdy Spice"
     select "Aries", from: :zodiac_sign

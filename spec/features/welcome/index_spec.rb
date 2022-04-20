@@ -60,6 +60,7 @@ RSpec.describe 'Welcome page', type: :feature do
     click_button("Log Out")
     click_button("Sign In")
     #save_and_open_page
+    
     expect(current_path).to eq("/dashboard")
   end
 end

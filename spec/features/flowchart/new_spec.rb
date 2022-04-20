@@ -44,6 +44,8 @@ RSpec.describe 'flowchart page', type: :feature do
     click_button 'Flowchart'
     expect(current_path).to eq("/flowchart")
     expect(page).to have_content("Edit Daily Flow Chart Information")
+    click_link("Edit Daily Flow Chart Information")
+    expect(current_path).to eq("/flowchart/edit")
   end
 
   it "has a link to edit the daily chart", :vcr  do
