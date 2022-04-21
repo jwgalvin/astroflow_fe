@@ -1,18 +1,20 @@
 class HoroscopeService
-  class << self 
+  class << self
     def call_today_horoscope(zodiac_sign)
-      response = conn.get("/api/v1/horoscopes/find?sign=#{zodiac_sign}")
-      parse_data(response)
-    end 
+      Rails.cache.fetch("horoscope-#{zodiac_sign}", expires_in: (Time.now.end_of_day - Time.now)) do
+        response = conn.get("/api/v1/horoscopes/find?sign=#{zodiac_sign}")
+        parse_data(response)
+      end
+    end
 
-    private 
+    private
 
-    def conn 
+    def conn
       Faraday.new(url: "https://astro-flow-be.herokuapp.com")
-    end 
+    end
 
     def parse_data(response)
       data = JSON.parse(response.body, symbolize_names: true)
-    end 
+    end
   end
-end 
+end
