@@ -1,6 +1,7 @@
 class FlowchartService
   class << self
     def call_to_create_flowchart(email, flow_chart)
+      #binding.pry
       response = conn.post("/api/v1/users/daily_flow_chart?email=#{email}&daily_flow_chart=#{flow_chart}")
     end
 
@@ -17,7 +18,7 @@ class FlowchartService
     private
 
     def conn
-      Faraday.new(url: "http://localhost:5000")
+      Faraday.new(url: "https://astro-flow.herokuapp.com/")
     end
 
     def parse_data(response)

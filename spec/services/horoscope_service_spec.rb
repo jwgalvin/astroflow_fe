@@ -29,7 +29,7 @@ RSpec.describe HoroscopeService do
     zodiac_sign = 'Leo'
     search = HoroscopeService.call_today_horoscope(zodiac_sign)
     yesterday = search[:yesterday_horoscope]
-    binding.pry
+    #binding.pry
     expect(search).to be_a Hash
     expect(yesterday.count).to eq(9)
     expect(yesterday[:compatibility]).to be_a(String)

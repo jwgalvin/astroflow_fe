@@ -3,7 +3,21 @@
 <a href="/flowchart/new"  class="btn btn-primary my-2">Add Daily Flow Chart Information</a>
 <a href="/flowchart/edit" class="btn btn-primary my-2">Edit Daily Flow Chart Information</a>
 <br>
-<% #@all_charts.each do |chart|%>
-<% #binding.pry %>
-
-<%#end%>
+<div class="form-holder">
+  <div class="form-body">
+    <div class="row">
+        <div class="form-content  ">
+<% @all_charts.each do |chart|%>
+<ul class="text_color form-items opaque">
+<li>Date:  <%= chart[:date] %></li><br>
+<li>Bloating:  <%= chart[:bloating]%></li><br>
+<li>Cramps:  <%= chart[:cramps]%></li><br>
+<li>Flow:  <%=chart[:flow_status]%></li><br>
+<li>Last updated:  <%=chart[:updated_at]%></li><br>
+<li>Emotional note:<%= chart[:emotions] %></li><br>
+</ul>
+<% end%>
+</div>
+</div>
+</div>
+</div>
