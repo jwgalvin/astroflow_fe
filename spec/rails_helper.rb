@@ -76,3 +76,22 @@ VCR.configure do |config|
   config.filter_sensitive_data('<api_key>') {ENV['api_key']}
   config.configure_rspec_metadata!
 end
+def stub_omniauth
+    OmniAuth.config.test_mode = true
+    OmniAuth.config.silence_get_warning = true
+    OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
+        provider: "google_oauth2",
+        uid: "12345678910",
+        info: {
+            email: "limsammy1@gmail.com",
+            name: "Sam",
+            zodiac_sign: "Aquarius"
+        },
+        credentials: {
+            token: "abcdefg12345",
+            refresh_token: "abcdefg12345",
+            expires_at: DateTime.now,
+        }
+    })
+    Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
+end
