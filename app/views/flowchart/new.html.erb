@@ -5,7 +5,7 @@
      <br>
        <p class="text-left"></p>
         
-<%= form_with url: "http://localhost:5000/api/v1/users/daily_flow_chart?email=#{@user_email}", method: :post, local: true do |f| %>
+<%= form_with url: "/flowchart/create", method: :post, local: true do |f| %>
 <p class="foot text-white text-center">
                   <%= f.label :date%>
                   <%= f.date_field :date %>
