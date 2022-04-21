@@ -19,6 +19,7 @@ SimpleCov.add_filter ['spec', 'config']
 WebMock.disable_net_connect!
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  #config.include IntegrationSpecHelper, :type => :request
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
@@ -98,3 +99,10 @@ RSpec.configure do |config|
 =end
 require 'webmock/rspec'
 end
+#Capybara.default_host = 'http://example.org'
+
+# OmniAuth.config.test_mode = true
+# OmniAuth.config.add_mock(:twitter, {
+#   :uid => '12345',
+#   :nickname => 'zapnap'
+# })

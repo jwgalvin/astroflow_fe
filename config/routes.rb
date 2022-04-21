@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
 
     root "welcome#index"
-    get 'astrow-flow.herokuapp.com/auth/google_oauth2/callback', to: 'users#sign_in'
+    get '/auth/google_oauth2/callback', to: 'users#sign_in'
     get '/logout', to: 'users#logout'
     get '/edit', to: 'users#edit'
-    post '/register', to: 'users#create'
-    patch '/register', to: 'users#update'
+    patch '/edit', to:'users#edit'
+    post '/register', to: 'users#sign_up'
+    patch '/register', to: 'users#sign_up'
     get '/flowchart', to: 'flowchart#index'
     get '/flowchart/new', to: 'flowchart#new'
     post '/flowchart/create', to: 'flowchart#create'
