@@ -1,15 +1,28 @@
+<div class="form-holder">
 
 <h1>Daily Flow Chart Form</h1>
-<br>     
+<br>
 <br>
      <br>
+
        <p class="text-left"></p>
+<<<<<<< HEAD
         
 <%= form_with url: "/flowchart/create", method: :post, local: true do |f| %>
+=======
+       <p class="text-left background2"></p>
+       <div class="form-body">
+         <div class="row">
+             <div class="form-content ">
+
+<%= form_with url: "http://localhost:5000/api/v1/users/daily_flow_chart?email=#{@user_email}", method: :post, local: true do |f| %>
+
+>>>>>>> fa751c363f8ea116f5c2320ffaad520b2f2eab17
 <p class="foot text-white text-center">
                   <%= f.label :date%>
-                  <%= f.date_field :date %>
+                  <%= f.date_field :date, value: Date.today %>
                   <br>
+                  <div class="form-items opaque">
                   <%= f.label :bloating%>
                   <%= f.select :bloating, ['Yes', 'No'] %>
                   <br>
@@ -19,10 +32,15 @@
                   <%= f.label :flow_status%>
                   <%= f.select :flow_status, ['Light', 'Moderate', 'Heavy'] %>
                   <br>
-                  <br>
-                  <%= f.label :emotions, "How are you feeling?"%>
-                  <%= f.text_area :emotions %>
+                  <%= f.label :emotion, "How are you feeling emotionally?"%>
+                  <%= f.text_field :emotion, value: "Fill in" %>
                   <br>
                   <%= f.submit "Submit" %>
                 <% end %>
-                </p>
+              
+
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
