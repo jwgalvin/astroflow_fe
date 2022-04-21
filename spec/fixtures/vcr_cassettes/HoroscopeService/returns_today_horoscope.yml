@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://astro-flow-be.herokuapp.com/api/v1/horoscopes/find?sign=Leo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 21 Apr 2022 00:55:22 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1087628e31e634cbba03e163712a4871"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a8bcbab2-fd9f-43a0-b597-25fdaffa069f
+      X-Runtime:
+      - '0.363627'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"today_horoscope":{"current_date":"April 21, 2022","description":"Someone
+        you''ve always thought of as ''just a friend'' will be along shortly with
+        a bold, brazen comment -- one you might not mind hearing at all. This won''t
+        be a typical day, but it will be memorable.","compatibility":"Aries","mood":"Productive","color":"Silver","lucky_number":"92","lucky_time":"4pm","moon":"Grass
+        Moon","moon_phase":"Waning Gibbous"},"yesterday_horoscope":{"current_date":"April
+        20, 2022","description":"You may need to mend fences after something that
+        happens today, and it might not be easy. That doesn''t mean you should turn
+        your back on someone you care for. Forget pride. Extend your hand.","compatibility":"Aries","mood":"Tolerance","color":"Shadow
+        Black","lucky_number":"60","lucky_time":"11pm","moon":"Grass Moon","moon_phase":"Waning
+        Gibbous"}}'
+  recorded_at: Thu, 21 Apr 2022 00:55:23 GMT
+recorded_with: VCR 6.1.0

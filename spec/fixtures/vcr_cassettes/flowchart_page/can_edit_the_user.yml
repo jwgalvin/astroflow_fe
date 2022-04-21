@@ -23,15 +23,15 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 20 Apr 2022 23:38:56 GMT
+      - Wed, 20 Apr 2022 23:39:04 GMT
       Connection:
       - keep-alive
       Content-Type:
       - text/html; charset=UTF-8
       X-Request-Id:
-      - 579d3b82-806e-4af6-a343-73ab849452f0
+      - 1851c9bf-0748-4df7-a21d-0b47692e9e64
       X-Runtime:
-      - '0.005457'
+      - '0.005885'
       Content-Length:
       - '0'
       Via:
@@ -39,7 +39,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 20 Apr 2022 23:38:57 GMT
+  recorded_at: Wed, 20 Apr 2022 23:39:05 GMT
 - request:
     method: get
     uri: https://astro-flow-be.herokuapp.com/api/v1/horoscopes/find?sign=Aquarius
@@ -61,7 +61,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 20 Apr 2022 23:38:57 GMT
+      - Wed, 20 Apr 2022 23:39:05 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -71,9 +71,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0fa8b7cb-4f7f-4831-aa97-219bbdbe770a
+      - 5294b16f-a10b-406b-b901-eb6f2b031a63
       X-Runtime:
-      - '0.319519'
+      - '0.369532'
       Transfer-Encoding:
       - chunked
       Via:
@@ -90,5 +90,56 @@ http_interactions:
         to give. Just make sure you''re done by early evening, because tonight was
         made for refined socializing with intelligent, well-dressed people.","compatibility":"Aries","mood":"Social","color":"Gold","lucky_number":"29","lucky_time":"10am","moon":"Grass
         Moon","moon_phase":"Waning Gibbous"}}'
-  recorded_at: Wed, 20 Apr 2022 23:38:58 GMT
+  recorded_at: Wed, 20 Apr 2022 23:39:06 GMT
+- request:
+    method: get
+    uri: https://astro-flow-be.herokuapp.com/api/v1/horoscopes/find?sign=Aries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 20 Apr 2022 23:39:05 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ab6be94082bbe1a4917b1075156884fc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ead340b2-fc18-4e6f-b3ea-8245e63fb88a
+      X-Runtime:
+      - '0.266787'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"today_horoscope":{"current_date":"April 20, 2022","description":"You''re
+        in the mood for ''just the facts, ma''am'' -- no doubt about it. You''ll be
+        able to put this to good use for you at work. Just don''t be too, too serious.
+        These people are your friends too, right?","compatibility":"Taurus","mood":"Relaxed","color":"Silver","lucky_number":"57","lucky_time":"1am","moon":"Grass
+        Moon","moon_phase":"Waning Gibbous"},"yesterday_horoscope":{"current_date":"April
+        19, 2022","description":"You''re still turning a meticulous eye toward plans
+        for the future, as well you should. This is the perfect time to make those
+        plans. Don''t move too quickly. You''ve got nothing but time.","compatibility":"Virgo","mood":"Patient","color":"Rose
+        Pink","lucky_number":"67","lucky_time":"5pm","moon":"Grass Moon","moon_phase":"Waning
+        Gibbous"}}'
+  recorded_at: Wed, 20 Apr 2022 23:39:06 GMT
 recorded_with: VCR 6.1.0

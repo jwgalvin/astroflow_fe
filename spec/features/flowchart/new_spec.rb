@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 RSpec.describe 'flowchart page', type: :feature do
   before(:each) do
     stub_omniauth
@@ -26,7 +25,7 @@ RSpec.describe 'flowchart page', type: :feature do
   it "is linked to from the user registration page", :vcr  do
 
     click_button 'Flowchart'
-    #save_and_open_page
+    
     expect(current_path).to eq("/flowchart")
     expect(page).to have_content("Add Daily Flow Chart Information")
     expect(page).to have_content("Edit Daily Flow Chart Information")
@@ -34,17 +33,19 @@ RSpec.describe 'flowchart page', type: :feature do
 
   it "is has links to add daily chart", :vcr  do
     click_button 'Flowchart'
-    # save_and_open_page
+
     expect(current_path).to eq("/flowchart")
     expect(page).to have_content("Add Daily Flow Chart Information")
     expect(page).to have_content("Edit Daily Flow Chart Information")
   end
 
   it "has a link to edit the daily chart", :vcr  do
-    #ave_and_open_page
+    
     click_button 'Flowchart'
     expect(current_path).to eq("/flowchart")
     expect(page).to have_content("Edit Daily Flow Chart Information")
+    click_link("Edit Daily Flow Chart Information")
+    expect(current_path).to eq("/flowchart/edit")
   end
 
   it "has a link to edit the daily chart", :vcr  do

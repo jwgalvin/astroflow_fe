@@ -13,7 +13,7 @@
                 <form class="form-content">
                 <p class="text-left"></p>
                 <p style="color:white">
-              <%= form_with url: '/create', method: :patch, local: true do |f| %>
+              <%= form_with url: '/edit', method: :patch, local: true do |f| %>
                   <%= f.label :name %>
                   <%= f.text_field :name  %><br>
                   <br><%= f.label :zodiac_sign %>

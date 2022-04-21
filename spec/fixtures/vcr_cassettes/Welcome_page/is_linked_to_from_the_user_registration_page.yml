@@ -23,15 +23,15 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 20 Apr 2022 22:47:26 GMT
+      - Wed, 20 Apr 2022 23:39:00 GMT
       Connection:
       - keep-alive
       Content-Type:
       - text/html; charset=UTF-8
       X-Request-Id:
-      - fbcd97b7-2fed-4911-8e9c-effdcba6caf4
+      - 64c87a67-2506-4842-b005-b97a04ec6ddd
       X-Runtime:
-      - '0.006268'
+      - '0.008279'
       Content-Length:
       - '0'
       Via:
@@ -39,5 +39,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 20 Apr 2022 22:47:26 GMT
+  recorded_at: Wed, 20 Apr 2022 23:39:01 GMT
 recorded_with: VCR 6.1.0

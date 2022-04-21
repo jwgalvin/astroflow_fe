@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     session[:access_token] = auth_hash['info']['email']
     if !user.zodiac_sign || !user.name
       UserFacade.add_user(email)
+      flash[:alert] = "error: #{error_message(user.errors)}"
       redirect_to "/sign_up"
     else
       redirect_to "/dashboard"
@@ -25,9 +26,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by(email: session[:access_token])
-      if !@user.zodiac_sign
-        redirect_to "/register"
-      end
+      # if !@user.zodiac_sign
+      #   redirect_to "/register"
+      # end
     horoscopes = HoroscopeFacade.get_today_horoscope(@user.zodiac_sign)
     @today_horoscope = horoscopes.first
     @yesterday_horoscope = horoscopes.last
@@ -35,7 +36,7 @@ class UsersController < ApplicationController
 
   def edit
     user = User.find_by(email: session[:access_token])
-    binding.pry
+    #binding.pry
     if params[:name] && params[:zodiac_sign]
       user.update(user_params)
       redirect_to "/dashboard"
