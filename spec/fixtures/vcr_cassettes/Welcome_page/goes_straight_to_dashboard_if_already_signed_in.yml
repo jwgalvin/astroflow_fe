@@ -23,15 +23,15 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 20 Apr 2022 23:39:02 GMT
+      - Thu, 21 Apr 2022 21:41:34 GMT
       Connection:
       - keep-alive
       Content-Type:
       - text/html; charset=UTF-8
       X-Request-Id:
-      - 73c0837e-7ae1-4822-91fe-7ab485166728
+      - 6c8132fa-8241-44a7-83c3-89010881c6a4
       X-Runtime:
-      - '0.005097'
+      - '0.005631'
       Content-Length:
       - '0'
       Via:
@@ -39,107 +39,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 20 Apr 2022 23:39:02 GMT
-- request:
-    method: get
-    uri: https://astro-flow-be.herokuapp.com/api/v1/horoscopes/find?sign=Aquarius
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.2.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Wed, 20 Apr 2022 23:39:03 GMT
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"e7d2671cc1f0f79a8c4dc9c8a8c267ba"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 35f3ae22-a70c-4c6c-8ae6-f8a8f1a2ebe5
-      X-Runtime:
-      - '0.338942'
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"today_horoscope":{"current_date":"April 20, 2022","description":"Try
-        not to be too serious. You don''t have to go overboard to let others know
-        that you mean business. Just force yourself to resist giggling, and remember
-        this phrase: Delegate, delegate, delegate.","compatibility":"Sagittarius","mood":"Calm","color":"Shadow
-        Black","lucky_number":"35","lucky_time":"12am","moon":"Grass Moon","moon_phase":"Waning
-        Gibbous"},"yesterday_horoscope":{"current_date":"April 19, 2022","description":"A
-        dear one just might need your help -- which, of course, you''ll be quite willing
-        to give. Just make sure you''re done by early evening, because tonight was
-        made for refined socializing with intelligent, well-dressed people.","compatibility":"Aries","mood":"Social","color":"Gold","lucky_number":"29","lucky_time":"10am","moon":"Grass
-        Moon","moon_phase":"Waning Gibbous"}}'
-  recorded_at: Wed, 20 Apr 2022 23:39:03 GMT
-- request:
-    method: get
-    uri: https://astro-flow-be.herokuapp.com/api/v1/horoscopes/find?sign=Aquarius
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.2.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Wed, 20 Apr 2022 23:39:03 GMT
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"e7d2671cc1f0f79a8c4dc9c8a8c267ba"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 3e11233d-2d76-47e2-93f3-c28b3f4ad127
-      X-Runtime:
-      - '0.326186'
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"today_horoscope":{"current_date":"April 20, 2022","description":"Try
-        not to be too serious. You don''t have to go overboard to let others know
-        that you mean business. Just force yourself to resist giggling, and remember
-        this phrase: Delegate, delegate, delegate.","compatibility":"Sagittarius","mood":"Calm","color":"Shadow
-        Black","lucky_number":"35","lucky_time":"12am","moon":"Grass Moon","moon_phase":"Waning
-        Gibbous"},"yesterday_horoscope":{"current_date":"April 19, 2022","description":"A
-        dear one just might need your help -- which, of course, you''ll be quite willing
-        to give. Just make sure you''re done by early evening, because tonight was
-        made for refined socializing with intelligent, well-dressed people.","compatibility":"Aries","mood":"Social","color":"Gold","lucky_number":"29","lucky_time":"10am","moon":"Grass
-        Moon","moon_phase":"Waning Gibbous"}}'
-  recorded_at: Wed, 20 Apr 2022 23:39:04 GMT
+  recorded_at: Thu, 21 Apr 2022 21:41:34 GMT
 recorded_with: VCR 6.1.0

@@ -10,7 +10,7 @@ RSpec.describe 'Welcome page', type: :feature do
     stub_omniauth
     visit root_path
     #save_and_open_page
-    expect(page).to have_content("Sign or Log In")
+    expect(page).to have_content("Log In")
     expect(page).to_not have_content("Dashboard")
     expect(page).to_not have_content("Flowchart")
     expect(page).to_not have_content("Log Out")
@@ -20,7 +20,7 @@ RSpec.describe 'Welcome page', type: :feature do
   it "is linked to from the user registration page", :vcr do
     stub_omniauth
     visit root_path
-    click_button 'Register'
+    click_on 'Register'
     expect(current_path).to eq("/sign_up")
   end
 
@@ -28,22 +28,23 @@ RSpec.describe 'Welcome page', type: :feature do
     stub_omniauth
     visit root_path
     expect(page).to have_content("ASTROFLOW")
-    expect(page).to have_button("Register")
-    expect(page).to have_button("Sign In")
+    expect(page).to have_content("Register")
+    expect(page).to have_link("Log In")
 
   end
 
   it "After Logging in the dashboard and logout button appear in Navbar ", :vcr do
     stub_omniauth
     visit root_path
-    click_button("Sign In")
-    #save_and_open_page
+    click_link("Log In")
+    expect(page).to have_content('Dashboard')
+    expect(page).to have_content('Logout')
   end
 
   it "has a Register button", :vcr do
     stub_omniauth
     visit root_path
-    click_link("Sign or Log In")
+    click_link("Register")
     expect(current_path).to eq("/sign_up")
   end
 
@@ -51,16 +52,16 @@ RSpec.describe 'Welcome page', type: :feature do
     stub_omniauth
     user = stub_omniauth[:info]
     visit root_path
-    click_button 'Sign In'
+    click_link 'Log In'
 
     fill_in 'name', with: "Sporty Spice"
     select "Aquarius", from: :zodiac_sign
 
     click_on('Save')
-    click_button("Log Out")
-    click_button("Sign In")
+    click_link("Logout")
+    click_link("Log In")
     #save_and_open_page
-    
+
     expect(current_path).to eq("/dashboard")
   end
 end
