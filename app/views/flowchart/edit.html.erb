@@ -7,12 +7,13 @@
 
        <p class="text-left"></p>
         
+
        <p class="text-left background2"></p>
        <div class="form-body">
          <div class="row">
              <div class="form-content ">
 
-<%= form_with url: "http://localhost:5000/api/v1/users/daily_flow_chart?email=#{@user_email}", method: :patch, local: true do |f| %>
+<%= form_with url: "/flowchart/update", method: :patch, local: true do |f| %>
 
 <p class="foot text-white text-center">
                   <%= f.label :date%>

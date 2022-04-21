@@ -7,16 +7,27 @@ class FlowchartController < ApplicationController
     @user_email = session[:access_token]
   end
   
-  # def create 
-  #   FlowchartFacade.send_flowchart(user_email, flow_chart_params)
-  # end 
+  def create 
+    user_email = session[:access_token]
+    flow_object = FlowchartFacade.flow_chart(flow_chart_params).to_json
+    FlowchartFacade.send_flowchart(user_email, flow_object)
+    redirect_to '/flowchart'
+  end 
 
   def edit 
     @user_email = session[:access_token]
   end 
 
-  private 
+  def update 
+    user_email = session[:access_token]
+    flow_object = FlowchartFacade.flow_chart(flow_chart_params).to_json
+    date = params[:date]
+    FlowchartFacade.update_flowchart(user_email, date, flow_object)
+    redirect_to '/flowchart'
+  end   
 
+  private 
+  
   def flow_chart_params
     params.permit(:date, :bloating, :cramps, :emotions, :flow_status)
   end

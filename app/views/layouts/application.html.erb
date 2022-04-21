@@ -12,9 +12,10 @@
   </head>
 
   <body>
-
+  <%= render "/layouts/navbar" %>
+<!--
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav_space">
-      <a class="navbar-brand" href="#">Site Navigation:</a>
+      <a class="navbar-brand" href="#">AstroFlow</a>
       <% if !current_user %>
       <a class="nav-item nav_space" href="/auth/google_oauth2">Sign or Log In</a>
       <% else %>
@@ -24,6 +25,7 @@
         <a class="nav-item nav_space"><%= button_to "Edit profile here", "/edit", method: :get %></a>
         <%end%>
     </nav>
+    -->
     <%= yield %>
   </body>
 </html>

@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get '/flowchart', to: 'flowchart#index'
     get '/flowchart/new', to: 'flowchart#new'
     post '/flowchart/create', to: 'flowchart#create'
+    patch '/flowchart/update', to: 'flowchart#update'
     get '/flowchart/edit', to: 'flowchart#edit'
     get '/sign_up', to: 'users#sign_up'
     get '/dashboard', to: 'users#show'
