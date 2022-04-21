@@ -8,8 +8,4 @@
   def current_user
     session[:access_token].present? #&& UserFacade.get_by_email(session[:email])
   end
-
-  def user
-    user.find(session[:user_id]) if session[:user_id]
-  end
 end
