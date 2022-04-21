@@ -12,7 +12,7 @@
 The design of this application relies on the facade design pattern. Here's a very high level overview: 
 * A controller sends a request from the front end and intiates the creation of a facade, and passes it data(params, from JSON or query) in the backend. 
 * A facade is a ruby class that initializes a Service, and sends the service data to a PORO. 
-* A service calls an external api enpoint(get (https://web.site?optional_param) and returns parsed JSON. 
+* A service calls an external api enpoint(get (https://web.site?optional_param) ) and returns parsed JSON. 
 * The parsed JSON is turned into a Ruby object through a PORO. 
 * The object is serialized and sent to the route matching the controller action. 
 
