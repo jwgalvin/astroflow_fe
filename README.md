@@ -10,7 +10,7 @@
 
 ## Design Principles: 
 The design of this application relies on the facade design pattern. Here's a very high level overview: 
-* A controller receives a request from the front end and intiates the creation of a facade, and passes it data(params, from JSON or query). 
+* A controller sends a request from the front end and intiates the creation of a facade, and passes it data(params, from JSON or query) in the backend. 
 * A facade is a ruby class that initializes a Service, and sends the service data to a PORO. 
 * A service calls an external api enpoint(get (https://web.site?optional_param) and returns parsed JSON. 
 * The parsed JSON is turned into a Ruby object through a PORO. 
@@ -45,7 +45,7 @@ The design of this application relies on the facade design pattern. Here's a ver
 9. run ```rails s``` to launch the production environment
 10. send requests to "https://localhost:3000". 
 
-## Schema
+## User Experience
 Dashboard 
 ![Screen Shot 2022-04-21 at 5 13 41 PM](https://user-images.githubusercontent.com/87387139/164566217-a1b2d5e4-bb22-454a-85fc-28af2a07836a.png)
 After registering as a user through a google account the user is brought to the user dashboard where they can review their horoscopes.
