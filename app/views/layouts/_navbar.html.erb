@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">AstroFlow</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   <% if !current_user %>
+      <a class="nav-item nav_space" href="/auth/google_oauth2">Log In</a>
+      <% else %>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
+      <a class="nav-item nav-link" href="/flowchart">FlowChart</a>
+      <a class="nav-item nav-link" href="/logout">Logout</a>
+    </div>
+  </div>
+  <% end %>
+</nav>
+
+<!--
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav_space">
+      <a class="navbar-brand" href="#">AstroFlow</a>
+      <% if !current_user %>
+      <a class="nav-item nav_space" href="/auth/google_oauth2">Sign or Log In</a>
+      <% else %>
+        <a class="nav-item nav_space"> <%= button_to "Dashboard", "/dashboard", method: :get %></a>
+        <a class="nav-item nav_space"><%= button_to "Log Out", "/logout", method: :get %></a>
+        <a class="nav-item nav_space"><%= button_to "Flowchart", "/flowchart", method: :get %></a>
+        <a class="nav-item nav_space"><%= button_to "Edit profile here", "/edit", method: :get %></a>
+        <%end%>
+    </nav>
