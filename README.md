@@ -2,7 +2,7 @@
 
 > A rails frontend for a service oriented application. A user can enter in data about their menstral cycle as well as their horoscope so Astroflow can provided a one stop shop of astrology and flowology. 
 
-## AstroFlow Backtend
+## AstroFlow Backend
 
 > To see the Backend application on github for this project [click here](https://github.com/T-willjr/astroflow_be).
 > 
