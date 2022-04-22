@@ -34,14 +34,14 @@ class UsersController < ApplicationController
     @yesterday_horoscope = horoscopes.last
   end
 
-  # def edit
-  #   user = User.find_by(email: session[:access_token])
-  #   #binding.pry
-  #   if params[:name] && params[:zodiac_sign]
-  #     user.update(user_params)
-  #     redirect_to "/dashboard"
-  #   end
-  # end
+  def edit
+    user = User.find_by(email: session[:access_token])
+  
+    if params[:name] && params[:zodiac_sign]
+      user.update(user_params)
+      redirect_to "/dashboard"
+    end
+  end
 
 
   def logout
