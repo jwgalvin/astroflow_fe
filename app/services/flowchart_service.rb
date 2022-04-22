@@ -18,7 +18,7 @@ class FlowchartService
     private
 
     def conn
-      Faraday.new(url: "https://astro-flow.herokuapp.com/")
+      Faraday.new(url: "https://astro-flow-be.herokuapp.com/")
     end
 
     def parse_data(response)
