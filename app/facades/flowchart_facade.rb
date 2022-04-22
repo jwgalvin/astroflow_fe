@@ -10,15 +10,17 @@ class FlowchartFacade
 
     def chart_list(email)
       charts = FlowchartService.get_all_charts(email)
-      poros = charts.each do |chart|
-        #binding.pry
-        DailyFlowChart.new(
-          date: chart["date"],
-          bloating: chart["bloating"],
-          cramps: chart["cramps"],
-          emotions: chart["emotions"],
-          flow_status: chart["flow_status"]
-          )
+      if charts != {"error": "No Data Available"}
+        poros = charts.each do |chart|
+          #binding.pry
+          DailyFlowChart.new(
+            date: chart["date"],
+            bloating: chart["bloating"],
+            cramps: chart["cramps"],
+            emotions: chart["emotions"],
+            flow_status: chart["flow_status"]
+            )
+        end
       end
     end
 

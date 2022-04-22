@@ -22,7 +22,12 @@ class FlowchartService
     end
 
     def parse_data(response)
-      data = JSON.parse(response.body, symbolize_names: true)
+      #binding.pry
+      if response.body != ""
+        data = JSON.parse(response.body, symbolize_names: true)
+      else
+        data = {"error": "No Data Available"}
+      end
     end
   end
 end
