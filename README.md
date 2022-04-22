@@ -15,6 +15,7 @@ The design of this application relies on the facade design pattern. Here's a ver
 * A service calls an external api enpoint(get (https://web.site?optional_param) ) and returns parsed JSON. 
 * The parsed JSON is turned into a Ruby object through a PORO. 
 * The object is serialized and sent to the route matching the controller action. 
+* Additionally, this project uses `Google OAuth 2.0` for users to create and log into their accounts. 
 
 ## Contributors
 🩹[Jessica Grazulis](https://github.com/jgrazulis)
