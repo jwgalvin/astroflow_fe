@@ -18,16 +18,11 @@ class FlowchartService
     private
 
     def conn
-      Faraday.new(url: "https://astro-flow-be.herokuapp.com/")
+      Faraday.new(url: "http://localhost:5000")
     end
 
     def parse_data(response)
-      #binding.pry
-      if response.body != ""
-        data = JSON.parse(response.body, symbolize_names: true)
-      else
-        data = {"error": "No Data Available"}
-      end
+      data = JSON.parse(response.body, symbolize_names: true)
     end
   end
 end

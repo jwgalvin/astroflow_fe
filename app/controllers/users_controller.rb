@@ -10,7 +10,7 @@ class UsersController < ApplicationController
       flash[:alert] = "error: #{error_message(user.errors)}"
       redirect_to "/sign_up"
     else
-      redirect_to "/dashboard"
+      redirect_to "/flowchart/new"
     end
   end
 
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     if params.include?("zodiac_sign")
       #binding.pry
       user.update(user_params)
-      redirect_to "/dashboard"
+      redirect_to "/flowchart/new"
     end
   end
 

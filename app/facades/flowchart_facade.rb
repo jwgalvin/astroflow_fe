@@ -25,6 +25,7 @@ class FlowchartFacade
     end
 
     def flow_chart(flow_chart_data)
+      #binding.pry
       DailyFlowChart.new(
             date: flow_chart_data["date"],
             bloating: flow_chart_data["bloating"],
