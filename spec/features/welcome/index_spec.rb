@@ -62,6 +62,6 @@ RSpec.describe 'Welcome page', type: :feature do
     click_link("Log In")
     #save_and_open_page
 
-    expect(current_path).to eq("/dashboard")
+    expect(current_path).to eq("/flowchart/new")
   end
 end

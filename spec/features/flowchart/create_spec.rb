@@ -27,7 +27,7 @@ RSpec.describe 'flowchart page', type: :feature do
     select 'No', from: :cramps
     select 'Moderate', from: :flow_status
     click_on("Submit")
-    save_and_open_page
+    #save_and_open_page
     expect(current_path).to eq("/flowchart")
   end
 end
