@@ -3,6 +3,9 @@ class FlowchartController < ApplicationController
   def index
     user = session[:access_token]
     @all_charts = FlowchartFacade.chart_list(user)
+    if @all_charts == nil
+      redirect_to "/flowchart/new"
+    end
     #binding.pry
   end
 
