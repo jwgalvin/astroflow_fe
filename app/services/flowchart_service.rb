@@ -11,14 +11,13 @@ class FlowchartService
 
     def get_all_charts(email)
       response = conn.get("/api/v1/users/daily_flow_chart/all?email=#{email}")
-      #binding.pry
+
       parse_data(response)
     end
-
     private
 
     def conn
-      Faraday.new(url: "http://localhost:5000")
+      Faraday.new(url: "http://astro-flow-be.herokuapp.com")
     end
 
     def parse_data(response)
