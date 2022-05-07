@@ -17,32 +17,116 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 500
-      message: Internal Server Error
+      code: 204
+      message: No Content
     headers:
       Server:
       - Cowboy
       Date:
-      - Thu, 21 Apr 2022 21:41:32 GMT
-      Connection:
-      - keep-alive
-      Content-Type:
-      - text/html; charset=UTF-8
-      X-Request-Id:
-      - 749b8351-e2a3-49bc-a4f5-72d3aea5f0b3
-      X-Runtime:
-      - '0.006284'
+      - Sat, 07 May 2022 16:05:05 GMT
       Content-Length:
       - '0'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 48e56599-8b5a-415d-898a-2923be9a9a93
+      X-Runtime:
+      - '0.004504'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Thu, 21 Apr 2022 21:41:32 GMT
+  recorded_at: Sat, 07 May 2022 16:05:06 GMT
+- request:
+    method: get
+    uri: http://astro-flow-be.herokuapp.com/api/v1/users/daily_flow_chart/all?email=limsammy1@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 07 May 2022 16:05:05 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"5eed05dee28f33ef7af71ab552cd567a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6b0bf7c8-a83f-4d1f-af08-f66753814f0a
+      X-Runtime:
+      - '0.007275'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":3,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:09.027Z","updated_at":"2022-04-22T02:08:09.027Z"},{"id":4,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:10.173Z","updated_at":"2022-04-22T02:08:10.173Z"},{"id":5,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:36.939Z","updated_at":"2022-04-22T02:10:36.939Z"},{"id":6,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:38.054Z","updated_at":"2022-04-22T02:10:38.054Z"},{"id":7,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:26.690Z","updated_at":"2022-04-22T02:14:26.690Z"},{"id":8,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:27.835Z","updated_at":"2022-04-22T02:14:27.835Z"},{"id":9,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:42.105Z","updated_at":"2022-04-22T02:16:42.105Z"},{"id":10,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:43.271Z","updated_at":"2022-04-22T02:16:43.271Z"},{"id":18,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:22.400Z","updated_at":"2022-04-22T20:18:22.400Z"},{"id":19,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:23.548Z","updated_at":"2022-04-22T20:18:23.548Z"},{"id":24,"date":"2022-05-07","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-05-07T16:05:04.824Z","updated_at":"2022-05-07T16:05:04.824Z"}]'
+  recorded_at: Sat, 07 May 2022 16:05:06 GMT
+- request:
+    method: get
+    uri: http://astro-flow-be.herokuapp.com/api/v1/users/daily_flow_chart/all?email=limsammy1@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 07 May 2022 16:05:06 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"5eed05dee28f33ef7af71ab552cd567a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - da1a9e90-7f93-4280-a7b9-78f9714328a1
+      X-Runtime:
+      - '0.007140'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":3,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:09.027Z","updated_at":"2022-04-22T02:08:09.027Z"},{"id":4,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:10.173Z","updated_at":"2022-04-22T02:08:10.173Z"},{"id":5,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:36.939Z","updated_at":"2022-04-22T02:10:36.939Z"},{"id":6,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:38.054Z","updated_at":"2022-04-22T02:10:38.054Z"},{"id":7,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:26.690Z","updated_at":"2022-04-22T02:14:26.690Z"},{"id":8,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:27.835Z","updated_at":"2022-04-22T02:14:27.835Z"},{"id":9,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:42.105Z","updated_at":"2022-04-22T02:16:42.105Z"},{"id":10,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:43.271Z","updated_at":"2022-04-22T02:16:43.271Z"},{"id":18,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:22.400Z","updated_at":"2022-04-22T20:18:22.400Z"},{"id":19,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:23.548Z","updated_at":"2022-04-22T20:18:23.548Z"},{"id":24,"date":"2022-05-07","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-05-07T16:05:04.824Z","updated_at":"2022-05-07T16:05:04.824Z"}]'
+  recorded_at: Sat, 07 May 2022 16:05:06 GMT
 - request:
     method: post
-    uri: http://localhost:5000/api/v1/users/daily_flow_chart?daily_flow_chart=%7B%22date%22:%222022-04-21%22,%22bloating%22:%22Yes%22,%22cramps%22:%22No%22,%22emotions%22:null,%22flow_status%22:%22Moderate%22%7D&email=limsammy1@gmail.com
+    uri: http://astro-flow-be.herokuapp.com/api/v1/users/daily_flow_chart?daily_flow_chart=%7B%22date%22:%222022-05-07%22,%22bloating%22:%22Yes%22,%22cramps%22:%22No%22,%22emotions%22:%22Sporty%22,%22flow_status%22:%22Moderate%22%7D&email=limsammy1@gmail.com
     body:
       encoding: UTF-8
       string: ''
@@ -57,139 +141,111 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 500
-      message: Internal Server Error
+      code: 204
+      message: No Content
     headers:
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Request-Id:
-      - b091ab02-8ea4-4210-87e5-f81362653d5e
-      X-Runtime:
-      - '0.016613'
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 07 May 2022 16:05:06 GMT
       Content-Length:
-      - '11154'
+      - '0'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - a019d77c-d39e-439b-bd6f-2c4b247e7be9
+      X-Runtime:
+      - '0.023593'
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"status":500,"error":"Internal Server Error","exception":"#\u003cNoMethodError:
-        undefined method `daily_flow_charts'' for nil:NilClass\u003e","traces":{"Application
-        Trace":[{"id":0,"trace":"app/controllers/api/v1/daily_flow_chart_controller.rb:31:in
-        `create_flowchart''"},{"id":1,"trace":"app/controllers/api/v1/daily_flow_chart_controller.rb:5:in
-        `create''"}],"Framework Trace":[{"id":2,"trace":"actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in
-        `send_action''"},{"id":3,"trace":"actionpack (5.2.7) lib/abstract_controller/base.rb:194:in
-        `process_action''"},{"id":4,"trace":"actionpack (5.2.7) lib/action_controller/metal/rendering.rb:30:in
-        `process_action''"},{"id":5,"trace":"actionpack (5.2.7) lib/abstract_controller/callbacks.rb:42:in
-        `block in process_action''"},{"id":6,"trace":"activesupport (5.2.7) lib/active_support/callbacks.rb:98:in
-        `run_callbacks''"},{"id":7,"trace":"actionpack (5.2.7) lib/abstract_controller/callbacks.rb:41:in
-        `process_action''"},{"id":8,"trace":"actionpack (5.2.7) lib/action_controller/metal/rescue.rb:22:in
-        `process_action''"},{"id":9,"trace":"actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:34:in
-        `block in process_action''"},{"id":10,"trace":"activesupport (5.2.7) lib/active_support/notifications.rb:168:in
-        `block in instrument''"},{"id":11,"trace":"activesupport (5.2.7) lib/active_support/notifications/instrumenter.rb:23:in
-        `instrument''"},{"id":12,"trace":"activesupport (5.2.7) lib/active_support/notifications.rb:168:in
-        `instrument''"},{"id":13,"trace":"actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:32:in
-        `process_action''"},{"id":14,"trace":"actionpack (5.2.7) lib/action_controller/metal/params_wrapper.rb:256:in
-        `process_action''"},{"id":15,"trace":"activerecord (5.2.7) lib/active_record/railties/controller_runtime.rb:24:in
-        `process_action''"},{"id":16,"trace":"actionpack (5.2.7) lib/abstract_controller/base.rb:134:in
-        `process''"},{"id":17,"trace":"actionpack (5.2.7) lib/action_controller/metal.rb:191:in
-        `dispatch''"},{"id":18,"trace":"actionpack (5.2.7) lib/action_controller/metal.rb:252:in
-        `dispatch''"},{"id":19,"trace":"actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:52:in
-        `dispatch''"},{"id":20,"trace":"actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:34:in
-        `serve''"},{"id":21,"trace":"actionpack (5.2.7) lib/action_dispatch/journey/router.rb:52:in
-        `block in serve''"},{"id":22,"trace":"actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in
-        `each''"},{"id":23,"trace":"actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in
-        `serve''"},{"id":24,"trace":"actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:840:in
-        `call''"},{"id":25,"trace":"omniauth (2.1.0) lib/omniauth/strategy.rb:202:in
-        `call!''"},{"id":26,"trace":"omniauth (2.1.0) lib/omniauth/strategy.rb:169:in
-        `call''"},{"id":27,"trace":"omniauth (2.1.0) lib/omniauth/builder.rb:44:in
-        `call''"},{"id":28,"trace":"rack (2.2.3) lib/rack/session/abstract/id.rb:266:in
-        `context''"},{"id":29,"trace":"rack (2.2.3) lib/rack/session/abstract/id.rb:260:in
-        `call''"},{"id":30,"trace":"actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in
-        `call''"},{"id":31,"trace":"rack (2.2.3) lib/rack/etag.rb:27:in `call''"},{"id":32,"trace":"rack
-        (2.2.3) lib/rack/conditional_get.rb:40:in `call''"},{"id":33,"trace":"rack
-        (2.2.3) lib/rack/head.rb:12:in `call''"},{"id":34,"trace":"activerecord (5.2.7)
-        lib/active_record/migration.rb:559:in `call''"},{"id":35,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":36,"trace":"activesupport
-        (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks''"},{"id":37,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"id":38,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"id":39,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call''"},{"id":40,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call''"},{"id":41,"trace":"railties
-        (5.2.7) lib/rails/rack/logger.rb:38:in `call_app''"},{"id":42,"trace":"railties
-        (5.2.7) lib/rails/rack/logger.rb:26:in `block in call''"},{"id":43,"trace":"activesupport
-        (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged''"},{"id":44,"trace":"activesupport
-        (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged''"},{"id":45,"trace":"activesupport
-        (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged''"},{"id":46,"trace":"railties
-        (5.2.7) lib/rails/rack/logger.rb:26:in `call''"},{"id":47,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call''"},{"id":48,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call''"},{"id":49,"trace":"rack
-        (2.2.3) lib/rack/runtime.rb:22:in `call''"},{"id":50,"trace":"activesupport
-        (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
-        `call''"},{"id":51,"trace":"actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in
-        `call''"},{"id":52,"trace":"actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in
-        `call''"},{"id":53,"trace":"rack (2.2.3) lib/rack/sendfile.rb:110:in `call''"},{"id":54,"trace":"railties
-        (5.2.7) lib/rails/engine.rb:524:in `call''"},{"id":55,"trace":"puma (3.12.6)
-        lib/puma/configuration.rb:227:in `call''"},{"id":56,"trace":"puma (3.12.6)
-        lib/puma/server.rb:706:in `handle_request''"},{"id":57,"trace":"puma (3.12.6)
-        lib/puma/server.rb:476:in `process_client''"},{"id":58,"trace":"puma (3.12.6)
-        lib/puma/server.rb:334:in `block in run''"},{"id":59,"trace":"puma (3.12.6)
-        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}],"Full Trace":[{"id":0,"trace":"app/controllers/api/v1/daily_flow_chart_controller.rb:31:in
-        `create_flowchart''"},{"id":1,"trace":"app/controllers/api/v1/daily_flow_chart_controller.rb:5:in
-        `create''"},{"id":2,"trace":"actionpack (5.2.7) lib/action_controller/metal/basic_implicit_render.rb:6:in
-        `send_action''"},{"id":3,"trace":"actionpack (5.2.7) lib/abstract_controller/base.rb:194:in
-        `process_action''"},{"id":4,"trace":"actionpack (5.2.7) lib/action_controller/metal/rendering.rb:30:in
-        `process_action''"},{"id":5,"trace":"actionpack (5.2.7) lib/abstract_controller/callbacks.rb:42:in
-        `block in process_action''"},{"id":6,"trace":"activesupport (5.2.7) lib/active_support/callbacks.rb:98:in
-        `run_callbacks''"},{"id":7,"trace":"actionpack (5.2.7) lib/abstract_controller/callbacks.rb:41:in
-        `process_action''"},{"id":8,"trace":"actionpack (5.2.7) lib/action_controller/metal/rescue.rb:22:in
-        `process_action''"},{"id":9,"trace":"actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:34:in
-        `block in process_action''"},{"id":10,"trace":"activesupport (5.2.7) lib/active_support/notifications.rb:168:in
-        `block in instrument''"},{"id":11,"trace":"activesupport (5.2.7) lib/active_support/notifications/instrumenter.rb:23:in
-        `instrument''"},{"id":12,"trace":"activesupport (5.2.7) lib/active_support/notifications.rb:168:in
-        `instrument''"},{"id":13,"trace":"actionpack (5.2.7) lib/action_controller/metal/instrumentation.rb:32:in
-        `process_action''"},{"id":14,"trace":"actionpack (5.2.7) lib/action_controller/metal/params_wrapper.rb:256:in
-        `process_action''"},{"id":15,"trace":"activerecord (5.2.7) lib/active_record/railties/controller_runtime.rb:24:in
-        `process_action''"},{"id":16,"trace":"actionpack (5.2.7) lib/abstract_controller/base.rb:134:in
-        `process''"},{"id":17,"trace":"actionpack (5.2.7) lib/action_controller/metal.rb:191:in
-        `dispatch''"},{"id":18,"trace":"actionpack (5.2.7) lib/action_controller/metal.rb:252:in
-        `dispatch''"},{"id":19,"trace":"actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:52:in
-        `dispatch''"},{"id":20,"trace":"actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:34:in
-        `serve''"},{"id":21,"trace":"actionpack (5.2.7) lib/action_dispatch/journey/router.rb:52:in
-        `block in serve''"},{"id":22,"trace":"actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in
-        `each''"},{"id":23,"trace":"actionpack (5.2.7) lib/action_dispatch/journey/router.rb:35:in
-        `serve''"},{"id":24,"trace":"actionpack (5.2.7) lib/action_dispatch/routing/route_set.rb:840:in
-        `call''"},{"id":25,"trace":"omniauth (2.1.0) lib/omniauth/strategy.rb:202:in
-        `call!''"},{"id":26,"trace":"omniauth (2.1.0) lib/omniauth/strategy.rb:169:in
-        `call''"},{"id":27,"trace":"omniauth (2.1.0) lib/omniauth/builder.rb:44:in
-        `call''"},{"id":28,"trace":"rack (2.2.3) lib/rack/session/abstract/id.rb:266:in
-        `context''"},{"id":29,"trace":"rack (2.2.3) lib/rack/session/abstract/id.rb:260:in
-        `call''"},{"id":30,"trace":"actionpack (5.2.7) lib/action_dispatch/middleware/cookies.rb:670:in
-        `call''"},{"id":31,"trace":"rack (2.2.3) lib/rack/etag.rb:27:in `call''"},{"id":32,"trace":"rack
-        (2.2.3) lib/rack/conditional_get.rb:40:in `call''"},{"id":33,"trace":"rack
-        (2.2.3) lib/rack/head.rb:12:in `call''"},{"id":34,"trace":"activerecord (5.2.7)
-        lib/active_record/migration.rb:559:in `call''"},{"id":35,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":36,"trace":"activesupport
-        (5.2.7) lib/active_support/callbacks.rb:98:in `run_callbacks''"},{"id":37,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"id":38,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"id":39,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call''"},{"id":40,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call''"},{"id":41,"trace":"railties
-        (5.2.7) lib/rails/rack/logger.rb:38:in `call_app''"},{"id":42,"trace":"railties
-        (5.2.7) lib/rails/rack/logger.rb:26:in `block in call''"},{"id":43,"trace":"activesupport
-        (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged''"},{"id":44,"trace":"activesupport
-        (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged''"},{"id":45,"trace":"activesupport
-        (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged''"},{"id":46,"trace":"railties
-        (5.2.7) lib/rails/rack/logger.rb:26:in `call''"},{"id":47,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call''"},{"id":48,"trace":"actionpack
-        (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call''"},{"id":49,"trace":"rack
-        (2.2.3) lib/rack/runtime.rb:22:in `call''"},{"id":50,"trace":"activesupport
-        (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
-        `call''"},{"id":51,"trace":"actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in
-        `call''"},{"id":52,"trace":"actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in
-        `call''"},{"id":53,"trace":"rack (2.2.3) lib/rack/sendfile.rb:110:in `call''"},{"id":54,"trace":"railties
-        (5.2.7) lib/rails/engine.rb:524:in `call''"},{"id":55,"trace":"puma (3.12.6)
-        lib/puma/configuration.rb:227:in `call''"},{"id":56,"trace":"puma (3.12.6)
-        lib/puma/server.rb:706:in `handle_request''"},{"id":57,"trace":"puma (3.12.6)
-        lib/puma/server.rb:476:in `process_client''"},{"id":58,"trace":"puma (3.12.6)
-        lib/puma/server.rb:334:in `block in run''"},{"id":59,"trace":"puma (3.12.6)
-        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
-  recorded_at: Thu, 21 Apr 2022 21:41:32 GMT
+      string: ''
+  recorded_at: Sat, 07 May 2022 16:05:06 GMT
+- request:
+    method: get
+    uri: http://astro-flow-be.herokuapp.com/api/v1/users/daily_flow_chart/all?email=limsammy1@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 07 May 2022 16:05:06 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"76956a6c45e041ba7bfe3aeeb60c4c6b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d7932ee0-727f-45f8-a0ab-b03606c6fc36
+      X-Runtime:
+      - '0.007427'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":3,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:09.027Z","updated_at":"2022-04-22T02:08:09.027Z"},{"id":4,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:10.173Z","updated_at":"2022-04-22T02:08:10.173Z"},{"id":5,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:36.939Z","updated_at":"2022-04-22T02:10:36.939Z"},{"id":6,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:38.054Z","updated_at":"2022-04-22T02:10:38.054Z"},{"id":7,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:26.690Z","updated_at":"2022-04-22T02:14:26.690Z"},{"id":8,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:27.835Z","updated_at":"2022-04-22T02:14:27.835Z"},{"id":9,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:42.105Z","updated_at":"2022-04-22T02:16:42.105Z"},{"id":10,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:43.271Z","updated_at":"2022-04-22T02:16:43.271Z"},{"id":18,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:22.400Z","updated_at":"2022-04-22T20:18:22.400Z"},{"id":19,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:23.548Z","updated_at":"2022-04-22T20:18:23.548Z"},{"id":24,"date":"2022-05-07","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-05-07T16:05:04.824Z","updated_at":"2022-05-07T16:05:04.824Z"},{"id":25,"date":"2022-05-07","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-05-07T16:05:06.807Z","updated_at":"2022-05-07T16:05:06.807Z"}]'
+  recorded_at: Sat, 07 May 2022 16:05:06 GMT
+- request:
+    method: get
+    uri: http://astro-flow-be.herokuapp.com/api/v1/users/daily_flow_chart/all?email=limsammy1@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 07 May 2022 16:05:06 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"76956a6c45e041ba7bfe3aeeb60c4c6b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8e10a104-e745-4e2e-bf5b-62d373614e5e
+      X-Runtime:
+      - '0.007670'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":3,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:09.027Z","updated_at":"2022-04-22T02:08:09.027Z"},{"id":4,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:10.173Z","updated_at":"2022-04-22T02:08:10.173Z"},{"id":5,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:36.939Z","updated_at":"2022-04-22T02:10:36.939Z"},{"id":6,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:38.054Z","updated_at":"2022-04-22T02:10:38.054Z"},{"id":7,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:26.690Z","updated_at":"2022-04-22T02:14:26.690Z"},{"id":8,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:27.835Z","updated_at":"2022-04-22T02:14:27.835Z"},{"id":9,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:42.105Z","updated_at":"2022-04-22T02:16:42.105Z"},{"id":10,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:43.271Z","updated_at":"2022-04-22T02:16:43.271Z"},{"id":18,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:22.400Z","updated_at":"2022-04-22T20:18:22.400Z"},{"id":19,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:23.548Z","updated_at":"2022-04-22T20:18:23.548Z"},{"id":24,"date":"2022-05-07","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-05-07T16:05:04.824Z","updated_at":"2022-05-07T16:05:04.824Z"},{"id":25,"date":"2022-05-07","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-05-07T16:05:06.807Z","updated_at":"2022-05-07T16:05:06.807Z"}]'
+  recorded_at: Sat, 07 May 2022 16:05:07 GMT
 recorded_with: VCR 6.1.0

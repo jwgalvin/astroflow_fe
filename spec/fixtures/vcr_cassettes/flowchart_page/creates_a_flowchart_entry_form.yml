@@ -17,27 +17,111 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 500
-      message: Internal Server Error
+      code: 204
+      message: No Content
     headers:
       Server:
       - Cowboy
       Date:
-      - Thu, 21 Apr 2022 21:41:30 GMT
-      Connection:
-      - keep-alive
-      Content-Type:
-      - text/html; charset=UTF-8
-      X-Request-Id:
-      - 17770c82-5da0-4a93-b7d9-4ed45c6d8b5e
-      X-Runtime:
-      - '0.103057'
+      - Sat, 07 May 2022 16:05:02 GMT
       Content-Length:
       - '0'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 4c3b61cc-bcd4-4f74-8754-952562549f44
+      X-Runtime:
+      - '0.005864'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Thu, 21 Apr 2022 21:41:31 GMT
+  recorded_at: Sat, 07 May 2022 16:05:02 GMT
+- request:
+    method: get
+    uri: http://astro-flow-be.herokuapp.com/api/v1/users/daily_flow_chart/all?email=limsammy1@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 07 May 2022 16:05:03 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6fa5e611cd68359ca708ef3b55114e5f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1c422358-c3d9-4001-887f-7078bb8a8810
+      X-Runtime:
+      - '0.455536'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":3,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:09.027Z","updated_at":"2022-04-22T02:08:09.027Z"},{"id":4,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:10.173Z","updated_at":"2022-04-22T02:08:10.173Z"},{"id":5,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:36.939Z","updated_at":"2022-04-22T02:10:36.939Z"},{"id":6,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:38.054Z","updated_at":"2022-04-22T02:10:38.054Z"},{"id":7,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:26.690Z","updated_at":"2022-04-22T02:14:26.690Z"},{"id":8,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:27.835Z","updated_at":"2022-04-22T02:14:27.835Z"},{"id":9,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:42.105Z","updated_at":"2022-04-22T02:16:42.105Z"},{"id":10,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:43.271Z","updated_at":"2022-04-22T02:16:43.271Z"},{"id":18,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:22.400Z","updated_at":"2022-04-22T20:18:22.400Z"},{"id":19,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:23.548Z","updated_at":"2022-04-22T20:18:23.548Z"}]'
+  recorded_at: Sat, 07 May 2022 16:05:03 GMT
+- request:
+    method: get
+    uri: http://astro-flow-be.herokuapp.com/api/v1/users/daily_flow_chart/all?email=limsammy1@gmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 07 May 2022 16:05:03 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"6fa5e611cd68359ca708ef3b55114e5f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 89bb9450-96e2-4f9e-bf5d-303aef9c5848
+      X-Runtime:
+      - '0.008564'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":3,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:09.027Z","updated_at":"2022-04-22T02:08:09.027Z"},{"id":4,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:08:10.173Z","updated_at":"2022-04-22T02:08:10.173Z"},{"id":5,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:36.939Z","updated_at":"2022-04-22T02:10:36.939Z"},{"id":6,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:10:38.054Z","updated_at":"2022-04-22T02:10:38.054Z"},{"id":7,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:26.690Z","updated_at":"2022-04-22T02:14:26.690Z"},{"id":8,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:14:27.835Z","updated_at":"2022-04-22T02:14:27.835Z"},{"id":9,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:42.105Z","updated_at":"2022-04-22T02:16:42.105Z"},{"id":10,"date":"2022-04-21","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T02:16:43.271Z","updated_at":"2022-04-22T02:16:43.271Z"},{"id":18,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:22.400Z","updated_at":"2022-04-22T20:18:22.400Z"},{"id":19,"date":"2022-04-22","bloating":true,"cramps":true,"emotions":"Sporty","flow_status":"Moderate","user_id":2,"created_at":"2022-04-22T20:18:23.548Z","updated_at":"2022-04-22T20:18:23.548Z"}]'
+  recorded_at: Sat, 07 May 2022 16:05:03 GMT
 recorded_with: VCR 6.1.0

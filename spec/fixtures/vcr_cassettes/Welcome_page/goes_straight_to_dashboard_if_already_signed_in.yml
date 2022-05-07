@@ -17,27 +17,27 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 500
-      message: Internal Server Error
+      code: 204
+      message: No Content
     headers:
       Server:
       - Cowboy
       Date:
-      - Thu, 21 Apr 2022 21:41:34 GMT
-      Connection:
-      - keep-alive
-      Content-Type:
-      - text/html; charset=UTF-8
-      X-Request-Id:
-      - 6c8132fa-8241-44a7-83c3-89010881c6a4
-      X-Runtime:
-      - '0.005631'
+      - Sat, 07 May 2022 16:05:10 GMT
       Content-Length:
       - '0'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 3fd4eafb-d26f-42cf-bd12-8bd6e3b3d2e2
+      X-Runtime:
+      - '0.004385'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Thu, 21 Apr 2022 21:41:34 GMT
+  recorded_at: Sat, 07 May 2022 16:05:10 GMT
 recorded_with: VCR 6.1.0
