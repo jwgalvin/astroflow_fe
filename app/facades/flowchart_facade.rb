@@ -12,7 +12,6 @@ class FlowchartFacade
       charts = FlowchartService.get_all_charts(email)
       if charts != {"error": "No Data Available"}
         poros = charts.each do |chart|
-          #binding.pry
           DailyFlowChart.new(
             date: chart["date"],
             bloating: chart["bloating"],
@@ -25,7 +24,6 @@ class FlowchartFacade
     end
 
     def flow_chart(flow_chart_data)
-      #binding.pry
       DailyFlowChart.new(
             date: flow_chart_data["date"],
             bloating: flow_chart_data["bloating"],

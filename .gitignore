@@ -16,7 +16,8 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+/spec/fixtures
+/spec/fixtures/*
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep

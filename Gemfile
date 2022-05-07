@@ -13,8 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks', '~> 5'
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
-gem 'bootstrap', '~> 4.3.1'
-gem 'omniauth-google-oauth2'
+
+
 gem 'figaro'
 gem 'jsonapi-serializer'
 
@@ -23,12 +23,12 @@ group :development, :test do
   gem 'webmock'
   gem 'vcr'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-   gem 'rspec-rails'
-   gem 'launchy'
-   gem 'capybara'
-   gem 'pry'
-   gem 'simplecov'
-   gem 'shoulda-matchers'
+  gem 'rspec-rails'
+  gem 'launchy'
+  gem 'capybara'
+  gem 'pry'
+  gem 'simplecov'
+  gem 'shoulda-matchers'
 end
 
 group :development do

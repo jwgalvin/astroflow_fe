@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   def sign_up
     user = User.find_or_create_by(email: session[:access_token])
     if params.include?("zodiac_sign")
-      #binding.pry
+
       user.update(user_params)
       redirect_to "/flowchart/new"
     end
@@ -36,7 +36,7 @@ class UsersController < ApplicationController
 
   def edit
     user = User.find_by(email: session[:access_token])
-  
+
     if params[:name] && params[:zodiac_sign]
       user.update(user_params)
       redirect_to "/dashboard"
