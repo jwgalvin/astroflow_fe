@@ -2,7 +2,7 @@
 
 > A rails frontend for a service oriented application. A user can enter in data about their menstral cycle as well as their horoscope so Astroflow can provided a one stop shop of astrology and flowology. 
 
-## AstroFlow Backtend
+## AstroFlow Backend
 
 > To see the Backend application on github for this project [click here](https://github.com/T-willjr/astroflow_be).
 > 
@@ -15,6 +15,7 @@ The design of this application relies on the facade design pattern. Here's a ver
 * A service calls an external api enpoint(get (https://web.site?optional_param) ) and returns parsed JSON. 
 * The parsed JSON is turned into a Ruby object through a PORO. 
 * The object is serialized and sent to the route matching the controller action. 
+* Additionally, this project uses `Google OAuth 2.0` for users to create and log into their accounts. 
 
 ## Contributors
 🩹[Jessica Grazulis](https://github.com/jgrazulis)
