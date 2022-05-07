@@ -14,6 +14,7 @@
 require 'shoulda/matchers'
 require 'webmock/rspec'
 require 'simplecov'
+require 'omniauth'
 SimpleCov.start 'rails'
 SimpleCov.add_filter ['spec', 'config']
 WebMock.disable_net_connect!
